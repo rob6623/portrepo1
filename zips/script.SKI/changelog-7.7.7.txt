@@ -1,0 +1,4 @@
+v1.0.0.4
+- Fixed The Tv Shows Not Playing From Here
+v1.0.0.1
+- Initial Release.
