@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Karnage"
+       name="[COLOR red]K_A_R_N_A_G_E[/COLOR]"
+       version="7.7.7"
+       provider-name="[COLOR red][B]KryptKeeper[/B][/COLOR]">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" version="5.2.1" optional="true" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.resolveurl" version="1.0.0.0" />
+		<import addon="script.module.liveresolver" />
+		<import addon="script.video.F4mProxy" />
+        <import addon="script.module.livestreamer" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+
+		<provides>video</provides>
+	</extension>
+
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Karnage</summary>
+		<description lang="en">[COLOR red]K_A_R_N_A_G_E[/COLOR] is the new  TV </description>
+		<disclaimer lang="en">[COLOR red][B]The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.[/B][/COLOR]</disclaimer>
+		<platform>all</platform>
+		<forum>Karnage</forum>
+		<website>Karnage</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+			<screenshot></screenshot>
+		</assets>
+		<news>Updated Providers</news>
+	</extension>
+</addon>

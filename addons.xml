@@ -289,7 +289,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.HellsPit" name="[COLOR red]H[/COLOR][COLOR silver]e[/COLOR][COLOR red]l[/COLOR][COLOR silver]l[/COLOR][COLOR red]s[/COLOR] [COLOR silver]P[/COLOR][COLOR red]i[/COLOR][COLOR silver]t[/COLOR]" version="7.8.0" provider-name="KryptKeeper">
+<addon id="plugin.video.HellsPit" name="[COLOR red]H[/COLOR][COLOR silver]e[/COLOR][COLOR red]l[/COLOR][COLOR silver]l[/COLOR][COLOR red]s[/COLOR] [COLOR silver]P[/COLOR][COLOR red]i[/COLOR][COLOR silver]t[/COLOR]" version="7.8.3" provider-name="KryptKeeper">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -491,7 +491,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.PortalGun" name="PortalGun" version="1.0.1" provider-name="B.C">
+<addon id="plugin.video.PortalGun" name="PortalGun" version="1.0.2" provider-name="B.C">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 		<import addon="script.module.requests" version="2.9.1"/>
@@ -619,31 +619,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.tvone1111" name="tvOne1111" version="6" provider-name="RACC">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.pyamf" />
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">tvOne</summary>
-    <description lang="en_gb">tvOne</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
 <addon id="plugin.video.WildWest" version="7.7.8" name="WildWest" provider-name="Mista j">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -673,7 +648,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.10" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.11" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
