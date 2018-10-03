@@ -58,7 +58,7 @@ class indexer:
     def root(self):
         try:
             regex.clear()
-            url = 'http://mahousecm.com/madhouseadd/dir/dir.xml'
+            url = 'http://reaperslockedmadhouse.com/karn/dir.xml'
             self.list = self.noname_list(url)
             for i in self.list:
                 i.update({'content': 'addons'})
