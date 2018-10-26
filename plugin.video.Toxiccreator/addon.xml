@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.Toxiccreator"
+version="0.0.1"
+name="Toxic creator"
+provider-name="ToxicBonehead">
+<requires>
+  <import addon="xbmc.python" version="2.20.0"/>
+  <import addon="script.module.xbmcswift2" version="2.4.0"/>
+  <import addon="script.module.requests" version="2.9.1" />
+</requires>
+<extension point="xbmc.python.pluginsource" library="main.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en">Toxic creator</summary>
+  <description lang="en">Integrate any plugin installed to Gas Chamber guide easily and quickly</description>
+  <description lang="en">Now includes a fully functioning back up and restore feature</description>
+  <disclaimer lang="en">Modified from TeamJDM from the original code from "Primeaval" </disclaimer>
+</extension>
+</addon>
+
