@@ -706,7 +706,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.15" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.16" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
@@ -780,7 +780,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="script.GCguide" name="Gas Chamber TV Guide" version="1.0.0" provider-name="Toxic Bonehead">
+<addon id="script.GCguide" name="Gas Chamber TV Guide" version="1.0.1" provider-name="Toxic Bonehead">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>

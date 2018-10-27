@@ -24,7 +24,7 @@ import time
 addonID = 'script.GCguide'
 addon = xbmcaddon.Addon(addonID)
 SkinDir = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.GCguide', 'resources', 'skins'))
-ivuedirectory = base64.decodestring('aHR0cDovL2l2dWV0dmd1aWRlLmNvbS9pdnVlZ3VpZGV4bWwv')
+ivuedirectory = base64.decodestring('aHR0cDovL3JlYXBlcnNsb2NrZWRtYWRob3VzZS5jb20vZ2NndWlkZS8=')
 CatFile = xbmc.translatePath(os.path.join('special://profile', 'addon_data', 'script.GCguide', 'resources', 'categories', addon.getSetting('categories.path')+'.ini'))
 demand = xbmcvfs.File('special://profile/addon_data/script.GCguide/resources/catchup.xml','rb').read()
 dialog = xbmcgui.Dialog() 
@@ -118,7 +118,7 @@ def percent(start_time, end_time):
     return int(round(percentagefloat))
 	
 def path():
-    ivuedir = base64.decodestring('aHR0cDovL2l2dWV0dmd1aWRlLmNvbS9pdnVlZ3VpZGV4bWwv')
+    ivuedir = base64.decodestring('aHR0cDovL3JlYXBlcnNsb2NrZWRtYWRob3VzZS5jb20vZ2NndWlkZS8=')
     return user
 
 def formatDate(timestamp, longdate=False, day=False):
