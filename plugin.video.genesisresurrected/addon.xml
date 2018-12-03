@@ -6,6 +6,7 @@
 		<import addon="script.genesisresurrected.metadata" version="1.0.0" />
 		<import addon="script.module.urlresolver" />
 		<import addon="script.module.metahandler" version="1.0.0" />
+        <import addon="script.module.globalscrapers" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="genesisresurrected.py">
 		<provides>video</provides>

@@ -19,7 +19,7 @@ from resources.lib.modules import thexem
 
 try: from sqlite3 import dbapi2 as database
 except: from pysqlite2 import dbapi2 as database
-
+import globalscrapers
 try: import urlresolver
 except: pass
 
@@ -1155,8 +1155,8 @@ class sources:
 
         self.metaProperty = 'plugin.video.genesisresurrected.container.meta'
 
-        from resources.lib.sources import sources
-
+        #from resources.lib.sources import sources
+        from globalscrapers import sources
         self.sourceDict = sources()
 
         try:
