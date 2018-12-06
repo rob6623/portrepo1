@@ -878,7 +878,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.20" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.21" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
@@ -1059,7 +1059,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="script.module.Frankenstein" name="Frankenstein Module" version="1.3" provider-name="Frankenstein">
+<addon id="script.module.Frankenstein" name="Frankenstein Module" version="1.4" provider-name="Frankenstein">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>

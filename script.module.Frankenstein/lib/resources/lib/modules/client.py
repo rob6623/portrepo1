@@ -21,7 +21,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Frankenstein is futile @lock_down... 
+# Resistance is futile @lock_down... 
 
 
 import re,sys,cookielib,urllib,urllib2,urlparse,gzip,StringIO,HTMLParser,time,random,base64,xbmc
@@ -473,7 +473,7 @@ class bfcookie:
 
     # not very robust but lazieness...
     def getCookieString(self, content, rcksid):
-        vars = re.findall('toNameless\("([^"]+)"', content)
+        vars = re.findall('toresistance\("([^"]+)"', content)
         value = self._decrypt(vars[2], vars[0], vars[1])
         cookie = "%s=%s;%s" % (self.COOKIE_NAME, value, rcksid)
         return cookie
@@ -518,7 +518,7 @@ class sucuri:
         except:
             pass
 
-"""Frankenstein Specific"""
+"""Bennu Specific"""
 
 def _get_keyboard( default="", heading="", hidden=False ):
     """ shows a keyboard and returns a value """

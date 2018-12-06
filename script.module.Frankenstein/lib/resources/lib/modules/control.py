@@ -19,7 +19,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Frankenstein is futile @lock_down... 
+# Frankenstien is futile @lock_down... 
 
 
 import os
@@ -201,17 +201,17 @@ def get_plugin_url(queries):
 def artPath():
     theme = appearance()
     if theme in ['-', '']: return
-    elif condVisibility('System.HasAddon(script.Frankenstein.artwork)'):
-        return os.path.join(xbmcaddon.Addon('script.Frankenstein.artwork').getAddonInfo('path'), 'resources', 'media', theme)
+    elif condVisibility('System.HasAddon(script.Frankenstien.artwork)'):
+        return os.path.join(xbmcaddon.Addon('script.Frankenstien.artwork').getAddonInfo('path'), 'resources', 'media', theme)
 
 
 def appearance():
-    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.Frankenstein.artwork)') else setting('appearance.alt').lower()
+    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.Frankenstien.artwork)') else setting('appearance.alt').lower()
     return appearance
 
 
 def artwork():
-    execute('RunPlugin(plugin://script.Frankenstein.artwork)')
+    execute('RunPlugin(plugin://script.Frankenstien.artwork)')
 
 
 def infoDialog(message, heading=addonInfo('name'), icon='', time=3000, sound=False):
@@ -230,8 +230,8 @@ def selectDialog(list, heading=addonInfo('name')):
     return dialog.select(heading, list)
 
 def metaFile():
-    if condVisibility('System.HasAddon(script.Frankenstein.metadata)'):
-        return os.path.join(xbmcaddon.Addon('script.Frankenstein.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
+    if condVisibility('System.HasAddon(script.Frankenstien.metadata)'):
+        return os.path.join(xbmcaddon.Addon('script.Frankenstien.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
 
 
 def apiLanguage(ret_name=None):

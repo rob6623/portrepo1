@@ -21,7 +21,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Frankenstein is futile @lock_down... 
+# Resistance is futile @lock_down... 
 
 
 import threading
