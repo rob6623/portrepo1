@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.Frankenstein" version="6.0.0" name="Frankenstein" provider-name="Frankenstein">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.Frankenstein" />
+		<import addon="script.Frankenstein.artwork" />
+		<import addon="script.Frankenstein.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Frankenstein.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Frankenstein</summary>
+		<description lang="en">Kindly note that Frankenstein is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum>https://www.tvaddons.co/forums/</forum>
+		<website>https://www.tvaddons.co/</website>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.gif</fanart>
+    			<screenshot></screenshot>
+    			<screenshot></screenshot>
+    			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
