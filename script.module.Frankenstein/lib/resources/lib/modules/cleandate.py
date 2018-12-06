@@ -21,7 +21,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Resistance is futile @lock_down... 
+# Frankenstein is futile @lock_down... 
 
 
 import time,datetime

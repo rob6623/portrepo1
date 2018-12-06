@@ -6,8 +6,8 @@ import urllib2,urllib
 import re
 import time
 from datetime import date, datetime, timedelta
-ADDON_ID            = 'script.module.Frankenstien'
-AddonTitle          = 'Frankenstien'
+ADDON_ID            = 'plugin.video.Frankenstein'
+AddonTitle          = '[COLOR green]Frankenstien[/COLOR]'
 fanart              = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'fanart.jpg'))
 icon                = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID, 'icon.png'))
 setting             = xbmcaddon.Addon().getSetting
@@ -23,10 +23,10 @@ HOME           = xbmc.translatePath('special://home/')
 ADDONS         = os.path.join(HOME,     'addons')
 USERDATA       = os.path.join(HOME,     'userdata')
 PLUGIN         = os.path.join(ADDONS,   ADDON_ID)
-ART            = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'media', 'art'))
-TERMS          = "[COLOR snow]Resistance Extra[/COLOR]\n[COLOR snow]This Addon does not host, provide, archive, store, or distribute media of any kind, and acts merely as an index (or directory) of media posted by other webmasters on the internet, which is completely outside of our control.Whereas we do not filter such references, we cannot and do not attempt to control, censor, or block any indexed material that may be considered offensive, abusive, libellous, obnoxious, inaccurate, deceptive, unlawful or otherwise distressing neither do we accept responsibility for this content or the consequences of such content being made available.\nAll users undertake to comply with the national laws applicable to the country they reside in and observe the rights inherent in any copyright material whilst upholding the rights of any copyright owner.All users are advised to use caution, discretion, common sense and personal judgment when using primewire.one or any references detailed within the directory and to respect the wishes of others who may value freedom from censorship, as consenting adults equal to (or possibly superior to) your own personal preferences.[/COLOR]\n\n[COLOR yellow]You must agree and that I am legally bound to these Terms and Conditions[/COLOR]"
+ART            = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'resources', 'art'))
+TERMS          = "[COLOR limegreen]Frankenstein Extra[/COLOR]\n[COLOR red]This Agreement is Two parts This Is The XXX Section of the addon\n[COLOR snow]This Addon does not host, provide, archive, store, or distribute media of any kind, and acts merely as an index (or directory) of media posted by other webmasters on the internet, which is completely outside of our control.Whereas we do not filter such references, we cannot and do not attempt to control, censor, or block any indexed material that may be considered offensive, abusive, libellous, obnoxious, inaccurate, deceptive, unlawful or otherwise distressing neither do we accept responsibility for this content or the consequences of such content being made available.\nAll users undertake to comply with the national laws applicable to the country they reside in and observe the rights inherent in any copyright material whilst upholding the rights of any copyright owner.All users are advised to use caution, discretion, common sense and personal judgment when using primewire.one or any references detailed within the directory and to respect the wishes of others who may value freedom from censorship, as consenting adults equal to (or possibly superior to) your own personal preferences.[/COLOR]\n\n[COLOR yellow]You must agree and that I am legally bound to these Terms and Conditions[/COLOR]"
 I_AGREE        = xbmc.translatePath(os.path.join(DATA_FOLDER , 'agreed.txt'))
-BACKGROUND     = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'media', 'art', 'notify.png'))
+BACKGROUND     = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'resources', 'art', 'ContentPanel.png'))
 FONTHEADER     = 'Font14'
 HEADERIMAGE    = ''
 FONTSETTINGS   = 'Font12'

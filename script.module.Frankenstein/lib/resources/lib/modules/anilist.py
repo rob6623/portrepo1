@@ -21,7 +21,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Resistance is futile @lock_down... 
+# Frankenstein is futile @lock_down... 
 
 import urlparse, urllib
 
@@ -40,7 +40,7 @@ def _getAniList(url):
 
 
 def _getToken():
-    result = urllib.urlencode({'grant_type': 'client_credentials', 'client_id': 'kodiexodus-7erse', 'client_secret': 'XelwkDEccpHX2uO8NpqIjVf6zeg'})
+    result = urllib.urlencode({'grant_type': 'client_credentials', 'client_id': 'kodiNameless-7erse', 'client_secret': 'XelwkDEccpHX2uO8NpqIjVf6zeg'})
     result = client.request('https://anilist.co/api/auth/access_token', post=result, headers={'Content-Type': 'application/x-www-form-urlencoded'}, error=True)
     result = utils.json_loads_as_str(result)
     return result['token_type'], result['access_token']

@@ -21,7 +21,7 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Resistance is futile @lock_down... 
+# Frankenstein is futile @lock_down... 
 
 
 try: from sqlite3 import dbapi2 as database

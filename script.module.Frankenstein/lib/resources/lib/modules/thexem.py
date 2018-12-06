@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Resistance Add-on
+    Frankenstein Add-on
     Copyright (C) 2017 scarecrow
 
     This program is free software: you can redistribute it and/or modify

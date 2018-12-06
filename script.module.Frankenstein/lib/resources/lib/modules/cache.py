@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Resistance Add-on
+    Frankenstein Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -69,7 +69,7 @@ def timeout(function, *args):
     except Exception:
         return None
 
-def bennu_download_get(function, timeout, *args, **table):
+def Nameless_download_get(function, timeout, *args, **table):
     try:
         response = None
 
@@ -299,7 +299,7 @@ def _find_cache_version():
         with open(versionFile, 'rb') as fh: oldVersion = fh.read()
     except: oldVersion = '0'
     try:
-        curVersion = control.addon('script.module.Resistance').getAddonInfo('version')
+        curVersion = control.addon('script.module.Frankenstein').getAddonInfo('version')
         if oldVersion != curVersion: 
             with open(versionFile, 'wb') as fh: fh.write(curVersion)
             return True
