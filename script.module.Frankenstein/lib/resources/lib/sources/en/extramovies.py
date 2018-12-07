@@ -1,7 +1,7 @@
 import requests,re,time,xbmcaddon
 import base64,urlresolver
 from ..scraper import Scraper
-from Frankenstein import cfscrape
+from resistance import cfscrape
 from ..common import clean_title,clean_search,random_agent,send_log,error_log
 
   

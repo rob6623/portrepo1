@@ -4,7 +4,7 @@ from ..scraper import Scraper
 from ..common import clean_title,clean_search,send_log,error_log
 User_Agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
 
-from Frankenstein import cfscrape
+from resistance import cfscrape
 
 class tvmoviestream(Scraper):
     domains = ['https://tvmoviestream.me/']

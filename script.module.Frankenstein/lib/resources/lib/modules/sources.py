@@ -21,11 +21,11 @@
 #         /|..|\       /|..|\
 #        `=}--{='     `=}--{='
 #       .-^--r-^-.   .-^--r-^-.
-# Frankenstein is futile @lock_down... 
+# Resistance is futile @lock_down... 
 
 
 import sys,re,json,urllib,urlparse,random,datetime,time
-
+import globalscrapers
 
 from resources.lib.modules import trakt
 from resources.lib.modules import tvmaze
@@ -38,7 +38,7 @@ from resources.lib.modules import workers
 from resources.lib.modules import source_utils
 from resources.lib.modules import log_utils
 #from resources.lib.modules import thexem
-import globalscrapers
+
 try: from sqlite3 import dbapi2 as database
 except: from pysqlite2 import dbapi2 as database
 
@@ -560,7 +560,7 @@ class sources:
             except:
                 pass
 
-        if control.addonInfo('id') == 'plugin.video.Frankenstein':
+        if control.addonInfo('id') == 'plugin.video.exodus':
             try:
                 if progressDialog: progressDialog.update(100, control.lang(30726).encode('utf-8'), control.lang(30731).encode('utf-8'))
 
@@ -570,7 +570,7 @@ class sources:
                 elif quality == 'SD': items = [i for i in items if i['quality'] == 'SD' and i['debrid'] == '']
                 elif quality == 'HD': items = [i for i in items if i['quality'] != 'SD']
 
-                if control.setting('Frankenstein.dev.log') == 'true':
+                if control.setting('bennu.dev.log') == 'true':
                     log_utils.log('Sources Returned: %s' % str(items), log_utils.LOGNOTICE)
 
                 try: progressDialog.close()
@@ -581,11 +581,11 @@ class sources:
                     return u
                 else:
                     meta = '{"title": "%s", "year": "%s", "imdb": "%s"}' % (title, year, imdb)
-                    '''control.window.clearProperty("plugin.video.Frankenstein.container.items")
-                    control.window.setProperty("plugin.video.Frankenstein.container.items", json.dumps(items))
+                    '''control.window.clearProperty("plugin.video.exodus.container.items")
+                    control.window.setProperty("plugin.video.exodus.container.items", json.dumps(items))
                     
-                    control.window.clearProperty("plugin.video.Frankenstein.container.meta")
-                    control.window.setProperty("plugin.video.Frankenstein.container.meta", meta)'''
+                    control.window.clearProperty("plugin.video.exodus.container.meta")
+                    control.window.setProperty("plugin.video.exodus.container.meta", meta)'''
                     control.window.clearProperty(self.itemProperty)
                     control.window.setProperty(self.itemProperty, json.dumps(items))
                     
@@ -1173,9 +1173,9 @@ class sources:
         return title
 
     def getConstants(self):
-        self.itemProperty = 'plugin.video.Frankenstein.container.items'
+        self.itemProperty = 'plugin.video.exodus.container.items'
 
-        self.metaProperty = 'plugin.video.Frankenstein.container.meta'
+        self.metaProperty = 'plugin.video.exodus.container.meta'
 
         from globalscrapers import sources
 

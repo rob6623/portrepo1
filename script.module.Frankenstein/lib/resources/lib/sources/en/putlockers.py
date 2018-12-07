@@ -4,7 +4,7 @@ from ..jsunpack import unpack
 import xbmcaddon
 from ..scraper import Scraper
 from ..common import clean_title,clean_search,send_log,error_log
-from Frankenstein import cfscrape
+from resistance import cfscrape
 
 
 a = 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0'

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Frankenstein Add-on
+    resistance Add-on
 
-    This is a new script added for the Frankenstein add-on.
+    This is a new script added for the resistance add-on.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

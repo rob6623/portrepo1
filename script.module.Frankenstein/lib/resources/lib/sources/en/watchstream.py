@@ -4,7 +4,7 @@ from ..common import random_agent,send_log,error_log
 requests.packages.urllib3.disable_warnings()
 s = requests.session()
 
-from Frankenstein import cfscrape 
+from resistance import cfscrape 
 class watchstream(Scraper):
     domains = ['https://putlockers.movie']
     name = "Watchstream"

@@ -2,7 +2,7 @@ import requests
 import re,xbmcaddon,time 
 from ..scraper import Scraper
 from ..common import clean_title,clean_search,send_log,error_log            
-from Frankenstein import cfscrape     
+from resistance import cfscrape     
 
 
 s = requests.session()

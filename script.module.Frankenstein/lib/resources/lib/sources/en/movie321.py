@@ -5,7 +5,7 @@ requests.packages.urllib3.disable_warnings()
 
 s = requests.session()
 User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
-from Frankenstein import cfscrape                                         
+from resistance import cfscrape                                         
 class Movie321(Scraper):
     domains = ['321movies.cc']
     name = "Movie321cc"

@@ -1,6 +1,6 @@
 #!/usr/bin/python
 """
-    Frankenstein Add-on
+    Exodus Add-on
     Copyright (C) 2016 tknorris
 
     This program is free software: you can redistribute it and/or modify
@@ -23,7 +23,7 @@ import string
 import json
 
 class JSUnfuck(object):
-    Frankenstein = None
+    numbers = None
     words = {
         "(![]+[])": "false",
         "([]+{})": "[object Object]",
@@ -74,7 +74,7 @@ class JSUnfuck(object):
         while True:
             start_js = self.js
             self.repl_words(self.words)
-            self.repl_Nameless()
+            self.repl_numbers()
             self.repl_arrays(self.words)
             self.repl_uniqs(self.uniqs)
             if start_js == self.js:
@@ -104,13 +104,13 @@ class JSUnfuck(object):
                 except:
                     pass
         
-    def repl_Nameless(self):
-        if self.Frankenstein is None:
-            self.Frankenstein = self.__gen_Nameless()
+    def repl_numbers(self):
+        if self.numbers is None:
+            self.numbers = self.__gen_numbers()
             
         while True:
             start_js = self.js
-            for key, value in sorted(self.Frankenstein.items(), key=lambda x: len(x[0]), reverse=True):
+            for key, value in sorted(self.numbers.items(), key=lambda x: len(x[0]), reverse=True):
                 self.js = self.js.replace(key, value)
     
             if self.js == start_js:
@@ -173,7 +173,7 @@ class JSUnfuck(object):
             else:
                 start = offset
         
-    def __gen_Nameless(self):
+    def __gen_numbers(self):
         n = {'!+[]+!![]+!![]+!![]+!![]+!![]+!![]+!![]+!![]': '9',
              '!+[]+!![]+!![]+!![]+!![]': '5', '!+[]+!![]+!![]+!![]': '4',
              '!+[]+!![]+!![]+!![]+!![]+!![]': '6', '!+[]+!![]': '2',

@@ -1,7 +1,7 @@
 import re,requests,xbmc,urllib,base64,xbmcaddon,time 
 from ..scraper import Scraper
 from ..common import clean_title,clean_search, filter_host, get_rd_domains,send_log,error_log  
-from Frankenstein import cfscrape 
+from resistance import cfscrape 
 
 User_Agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36'
 

@@ -18,7 +18,7 @@ class Scraper:
 
     @classmethod
     def get_setting(cals, key):
-        return xbmcaddon.Addon('script.module.Frankenstein').getSetting(key)
+        return xbmcaddon.Addon('script.module.resistance').getSetting(key)
 
     @classmethod
     def _is_enabled(clas):

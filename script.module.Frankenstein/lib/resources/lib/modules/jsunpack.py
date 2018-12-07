@@ -84,7 +84,7 @@ def _replacestrings(source):
 
 class Unbaser(object):
     """Functor for a given base. Will efficiently convert
-    strings to natural Frankenstein."""
+    strings to natural numbers."""
     ALPHABET = {
         62: '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
         95: (' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ'
