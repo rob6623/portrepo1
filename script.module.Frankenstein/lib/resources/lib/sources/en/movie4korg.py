@@ -2,7 +2,7 @@
 
 """
     Cerebro ShowBox Scraper
-    Credits to Exodus and Covenant; our thanks go to their creators
+    Credits to Frankenstein and Covenant; our thanks go to their creators
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

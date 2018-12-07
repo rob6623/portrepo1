@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 """
-    //Exodus Add-on//
-    Updated for Exodus Add-on
+    //Frankenstein Add-on//
+    Updated for Frankenstein Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -198,17 +198,17 @@ def get_plugin_url(queries):
 def artPath():
     theme = appearance()
     if theme in ['-', '']: return
-    elif condVisibility('System.HasAddon(script.exodus.artwork)'):
-        return os.path.join(xbmcaddon.Addon('script.exodus.artwork').getAddonInfo('path'), 'resources', 'media', theme)
+    elif condVisibility('System.HasAddon(script.Frankenstein.artwork)'):
+        return os.path.join(xbmcaddon.Addon('script.Frankenstein.artwork').getAddonInfo('path'), 'resources', 'media', theme)
 
 
 def appearance():
-    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.exodus.artwork)') else setting('appearance.alt').lower()
+    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.Frankenstein.artwork)') else setting('appearance.alt').lower()
     return appearance
 
 
 def artwork():
-    execute('RunPlugin(plugin://script.exodus.artwork)')
+    execute('RunPlugin(plugin://script.Frankenstein.artwork)')
 
 
 def infoDialog(message, heading=addonInfo('name'), icon='', time=3000, sound=False):
@@ -227,8 +227,8 @@ def selectDialog(list, heading=addonInfo('name')):
     return dialog.select(heading, list)
 
 def metaFile():
-    if condVisibility('System.HasAddon(script.exodus.metadata)'):
-        return os.path.join(xbmcaddon.Addon('script.exodus.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
+    if condVisibility('System.HasAddon(script.Frankenstein.metadata)'):
+        return os.path.join(xbmcaddon.Addon('script.Frankenstein.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
 
 
 def apiLanguage(ret_name=None):

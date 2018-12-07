@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 '''
-    Exodus Add-on
+    Frankenstein Add-on
     Copyright (C) 2018 CherryTeam
 
     This program is free software: you can redistribute it and/or modify

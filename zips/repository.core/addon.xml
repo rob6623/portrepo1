@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.core" name="[COLOR red]C[/COLOR]ore [COLOR red]R[/COLOR]epository" version="1.3" provider-name="Solid_Snake">
+<addon id="repository.core" name="[COLOR red]C[/COLOR]ore [COLOR red]R[/COLOR]epository" version="1.5" provider-name="New Owner">
 	<extension point="xbmc.addon.repository" name="Core">
 		<dir>
 		    <info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
