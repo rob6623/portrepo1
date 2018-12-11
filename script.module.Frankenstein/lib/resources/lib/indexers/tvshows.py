@@ -1,21 +1,27 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Frankenstein Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+# -*- coding: UTF-8 -*-
+#           ________
+#          _,.-Y  |  |  Y-._
+#      .-~"   ||  |  |  |   "-.
+#      I" ""=="|" !""! "|"[]""|     _____
+#      L__  [] |..------|:   _[----I" .-{"-.
+#     I___|  ..| l______|l_ [__L]_[I_/r(=}=-P
+#    [L______L_[________]______j~  '-=c_]/=-^
+#     \_I_j.--.\==I|I==_/.--L_]
+#       [_((==)[`-----"](==)j
+#          I--I"~~"""~~"I--I
+#          |[]|         |[]|
+#          l__j         l__j
+#         |!!|         |!!|
+#          |..|         |..|
+#          ([])         ([])
+#          ]--[         ]--[
+#          [_L]         [_L]
+#         /|..|\       /|..|\
+#        `=}--{='     `=}--{='
+#       .-^--r-^-.   .-^--r-^-.
+# Resistance is futile @lock_down... 
 
 
 from resources.lib.modules import trakt
@@ -77,6 +83,36 @@ class tvshows:
         self.language_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
         self.certification_link = 'http://www.imdb.com/search/title?title_type=tv_series,mini_series&release_date=,date[0]&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
         self.trending_link = 'http://api.trakt.tv/shows/trending?limit=40&page=1'
+        self.usprime_link = 'https://www.imdb.com/search/title?title_type=tv_series&online_availability=US%2Ftoday%2FAmazon%2Fsubs'
+        self.classtv_link = 'https://www.imdb.com/search/title?title_type=tv_series&release_date=1900-01-01,1993-12-31&sort=moviemeter,asc'
+        self.ghostadv_link = 'https://www.imdb.com/search/title?title=ghost+adventures&title_type=tv_series'
+        self.mosth_link = 'https://www.imdb.com/search/title?title=most+haunted&title_type=tv_series&release_date=2002-01-01,2002-12-31'
+        self.ghosth_link = 'https://www.imdb.com/search/title?title=ghost+hunters&title_type=tv_series&release_date=2004-01-01,2004-12-31'
+        self.paraw_link = 'https://www.imdb.com/search/title?title=paranormal+witness&title_type=tv_series'
+        self.paral_link = 'https://www.imdb.com/search/title?title=paranormal+lockdown'
+        self.haunt_link = 'https://www.imdb.com/search/title?title=a+haunting&title_type=tv_series&release_date=2005-01-01,2005-12-31'
+        self.hauntc_link = 'https://www.imdb.com/search/title?title=haunted+collector&title_type=tv_series'
+        self.deadp_link = 'https://www.imdb.com/search/title?title=deadly+possessions&title_type=tv_series'
+        self.ghosta_link = 'https://www.imdb.com/search/title?title=ghost+asylum&title_type=tv_series'
+        self.paran_link = 'https://www.imdb.com/search/title?title=my+ghost+story&title_type=tv_series'
+        self.ghosti_link = 'https://www.imdb.com/search/title?title=the+ghost+inside+my+child&title_type=tv_series'
+        self.docsa_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=documentary'
+        self.myst_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=mystery'
+        self.scifi1_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=sci_fi'
+        self.userr_link = 'https://www.imdb.com/search/title?title_type=tv_series&user_rating=7.0,10.0'
+        self.mini_link = 'https://www.imdb.com/search/title?title_type=tv_miniseries'
+        self.pg_link = 'https://www.imdb.com/search/title?title_type=tv_series&certificates=US%3Ag,US%3Apg'
+        self.scian_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=animation,sci_fi'
+        self.ani1_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=animation&countries=%C2%B7%C2%B7%C2%B7%C2%A0Common+Countries%C2%A0%C2%B7%C2%B7%C2%B7'
+        self.rtv_link = 'https://www.imdb.com/search/title?title_type=tv_series&genres=reality_tv'
+        self.waltd_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=disney'
+        self.dreamw_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=dreamworks'
+        self.sony3_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=sony'
+        self.warnerbro1_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=warner'
+        self.uni1_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=universal'
+        self.fox11_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=fox'
+        self.para4_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=paramount'
+        self.mgm5_link = 'https://www.imdb.com/search/title?title_type=tv_series&companies=mgm'
 
         self.traktlists_link = 'http://api.trakt.tv/users/me/lists'
         self.traktlikedlists_link = 'http://api.trakt.tv/users/likes/lists?limit=1000000'
@@ -144,18 +180,18 @@ class tvshows:
     def search(self):
 
         navigator.navigator().addDirectoryItem(32603, 'tvSearchnew', 'search.png', 'DefaultTVShows.png')
-        try: from sqlite3 import dbapi2 as database
-        except: from pysqlite2 import dbapi2 as database
+        #try: from sqlite3 import dbapi2 as database
+        #except: from pysqlite2 import dbapi2 as database
 
-        dbcon = database.connect(control.searchFile)
-        dbcur = dbcon.cursor()
+        #dbcon = database.connect(control.searchFile)
+        #dbcur = dbcon.cursor()
 
-        try:
-            dbcur.executescript("CREATE TABLE IF NOT EXISTS tvshow (ID Integer PRIMARY KEY AUTOINCREMENT, term);")
-        except:
-            pass
+        #try:
+        #    dbcur.executescript("CREATE TABLE IF NOT EXISTS tvshow (ID Integer PRIMARY KEY AUTOINCREMENT, term);")
+        #except:
+        #    pass
 
-        dbcur.execute("SELECT * FROM tvshow ORDER BY ID DESC")
+        #dbcur.execute("SELECT * FROM tvshow ORDER BY ID DESC")
 
         lst = []
 
@@ -181,17 +217,18 @@ class tvshows:
 
             if (q == None or q == ''): return
 
-            try: from sqlite3 import dbapi2 as database
-            except: from pysqlite2 import dbapi2 as database
+            #try: from sqlite3 import dbapi2 as database
+            #except: from pysqlite2 import dbapi2 as database
 
-            dbcon = database.connect(control.searchFile)
-            dbcur = dbcon.cursor()
-            dbcur.execute("INSERT INTO tvshow VALUES (?,?)", (None,q))
-            dbcon.commit()
-            dbcur.close()
-            url = self.search_link + urllib.quote_plus(q)
-            url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
-            control.execute('Container.Update(%s)' % url)
+            #dbcon = database.connect(control.searchFile)
+            #dbcur = dbcon.cursor()
+            #dbcur.execute("INSERT INTO tvshow VALUES (?,?)", (None,q))
+            #dbcon.commit()
+            #dbcur.close()
+            url = self.search_link + q.replace(" ", "+")
+            #url = '%s?action=tvshowPage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            #control.execute('Container.Update(%s)' % url)
+            tvshows().get(url)
 
     def search_term(self, name):
             control.idle()
@@ -210,9 +247,10 @@ class tvshows:
 
             if (q == None or q == ''): return
 
-            url = self.persons_link + urllib.quote_plus(q)
-            url = '%s?action=tvPersons&url=%s' % (sys.argv[0], urllib.quote_plus(url))
-            control.execute('Container.Update(%s)' % url)
+            url = self.persons_link + q.replace(" ", "+")
+            #url = '%s?action=tvPersons&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            #control.execute('Container.Update(%s)' % url)
+            tvshows().persons(url)
         except:
             return
 

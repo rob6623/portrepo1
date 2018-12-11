@@ -1,21 +1,52 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Frankenstein Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+###############################################################################################################
+# ________  ________  ___       ___  ________                 ________  ________   ________  ___  __    _______      
+#|\   ____\|\   __  \|\  \     |\  \|\   ___ \               |\   ____\|\   ___  \|\   __  \|\  \|\  \ |\  ___ \     
+#\ \  \___|\ \  \|\  \ \  \    \ \  \ \  \_|\ \  ____________\ \  \___|\ \  \\ \  \ \  \|\  \ \  \/  /|\ \   __/|    
+# \ \_____  \ \  \\\  \ \  \    \ \  \ \  \ \\ \|\____________\ \_____  \ \  \\ \  \ \   __  \ \   ___  \ \  \_|/__  
+#  \|____|\  \ \  \\\  \ \  \____\ \  \ \  \_\\ \|____________|\|____|\  \ \  \\ \  \ \  \ \  \ \  \\ \  \ \  \_|\ \ 
+#    ____\_\  \ \_______\ \_______\ \__\ \_______\               ____\_\  \ \__\\ \__\ \__\ \__\ \__\\ \__\ \_______\
+#   |\_________\|_______|\|_______|\|__|\|_______|              |\_________\|__| \|__|\|__|\|__|\|__| \|__|\|_______|
+#   \|_________|                                                \|_________|                                         
+#                                                                                                                    
+################################################################################################################                                                                                                                    
+#############################################################
+#´´´´´´´´´´´´´´´´´´´ ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´`#
+#´´´´´´´´´´´´´´´´´¶¶¶¶¶¶´´´´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´#
+#´´´´´´´´´´´´´´¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶´´´´´´´´´´´´´´#
+#´´´´´´´´´´´´´¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´´´#
+#´´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´´#
+#´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´`´´´´´´´´´´´¶¶´´´´´´´´´´`#
+#´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´#
+#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´¶¶´´´´´´´´´´#
+#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶´´´´´´´´´´#
+#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶´´´´´´´´´´#
+#´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´¶¶´´´´´´´´´´#
+#´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´#
+#´´´´´´´´´´´¶¶´¶¶´´´¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶´´´¶¶´¶¶´´´´´´´´´´´#
+#´´´´´´´´´´´´¶¶¶¶´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶´¶¶¶¶¶´´´´´´´´´´´#
+#´´´´´´´´´´´´´¶¶¶´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶´¶¶¶´´´´´´´´´´´´´#
+#´´´´¶¶¶´´´´´´´¶¶´´¶¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶¶¶´´¶¶´´´´´´¶¶¶¶´´´#
+#´´´¶¶¶¶¶´´´´´¶¶´´´¶¶¶¶¶¶¶´´´¶¶¶´´´¶¶¶¶¶¶¶´´´¶¶´´´´´¶¶¶¶¶¶´´#
+#´´¶¶´´´¶¶´´´´¶¶´´´´´¶¶¶´´´´¶¶¶¶¶´´´´¶¶¶´´´´´¶¶´´´´¶¶´´´¶¶´´#
+#´¶¶¶´´´´¶¶¶¶´´¶¶´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´¶¶´´¶¶¶¶´´´´¶¶¶´#
+#¶¶´´´´´´´´´¶¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶¶¶´´´´´´´´¶¶#
+#¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶´´´´¶¶¶¶¶¶¶´´´´¶¶¶¶¶¶¶¶´´´´´´¶¶¶¶¶¶¶¶#
+#´´¶¶¶¶´¶¶¶¶¶´´´´´´¶¶¶¶¶´´´´´´´´´´´´´´¶¶¶´¶¶´´´´´¶¶¶¶¶¶´¶¶¶´#
+#´´´´´´´´´´¶¶¶¶¶¶´´¶¶¶´´¶¶´´´´´´´´´´´¶¶´´¶¶¶´´¶¶¶¶¶¶´´´´´´´´#
+#´´´´´´´´´´´´´´¶¶¶¶¶¶´¶¶´¶¶¶¶¶¶¶¶¶¶¶´¶¶´¶¶¶¶¶¶´´´´´´´´´´´´´´#
+#´´´´´´´´´´´´´´´´´´¶¶´¶¶´¶´¶´¶´¶´¶´¶´¶´¶´¶¶´´´´´´´´´´´´´´´´´#
+#´´´´´´´´´´´´´´´´¶¶¶¶´´¶´¶´¶´¶´¶´¶´¶´¶´´´¶¶¶¶¶´´´´´´´´´´´´´´#
+#´´´´´´´´´´´´¶¶¶¶¶´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶¶¶´´´¶¶´¶¶¶¶¶´´´´´´´´´´´´#
+#´´´´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´´´´´´¶¶´´´´´´¶¶¶¶¶¶¶¶¶´´´´#
+#´´´¶¶´´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´´´´¶¶¶¶¶¶¶¶´´´´´´´´´´¶¶´´´#
+#´´´´¶¶¶´´´´´¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶´´´´´¶¶¶´´´´#
+#´´´´´´¶¶´´´¶¶¶´´´´´´´´´´´¶¶¶¶¶¶¶¶¶´´´´´´´´´´´¶¶¶´´´¶¶´´´´´´#
+#´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶¶´´´´´´#
+#´´´´´´´¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶´´´´´´´#
+#########################BONECRUSHER#########################
+#                        ###########               
 
 
 import os,sys,urlparse
@@ -23,7 +54,6 @@ import os,sys,urlparse
 from resources.lib.modules import control
 from resources.lib.modules import trakt
 from resources.lib.modules import cache
-
 sysaddon = sys.argv[0] ; syshandle = int(sys.argv[1])
 
 artPath = control.artPath() ; addonFanart = control.addonFanart()
@@ -41,7 +71,7 @@ class navigator:
     def root(self):
         self.addDirectoryItem(32001, 'movieNavigator', 'movies.png', 'DefaultMovies.png')
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('Tid Bits', 'listNavigator', 'tid-bits.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Tid Bits', 'resistdNavigator', 'tid-bits.png', 'DefaultTVShows.png')
 
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
@@ -54,8 +84,7 @@ class navigator:
             self.addDirectoryItem(32006, 'tvWidget', 'latest-episodes.png', 'DefaultRecentlyAddedEpisodes.png')
 
         self.addDirectoryItem(32007, 'channels', 'channels.png', 'DefaultMovies.png')
-        if not control.setting('furk.api') == '':
-            self.addDirectoryItem('Furk.net', 'furkNavigator', 'movies.png', 'movies.png')
+
         self.addDirectoryItem(32008, 'toolNavigator', 'tools.png', 'DefaultAddonProgram.png')
 
         downloads = True if control.setting('downloads') == 'true' and (len(control.listDir(control.setting('movie.download.path'))[0]) > 0 or len(control.listDir(control.setting('tv.download.path'))[0]) > 0) else False
@@ -64,11 +93,6 @@ class navigator:
 
         self.addDirectoryItem(32010, 'searchNavigator', 'search.png', 'DefaultFolder.png')
 
-        self.endDirectory()
-
-    def furk(self):
-        self.addDirectoryItem('User Files', 'furkUserFiles', 'mytvnavigator.png', 'mytvnavigator.png')
-        self.addDirectoryItem('Search', 'furkSearch', 'search.png', 'search.png')
         self.endDirectory()
 
     def movies(self, lite=False):
@@ -128,11 +152,6 @@ class navigator:
             self.addDirectoryItem(32010, 'movieSearch', 'search.png', 'DefaultMovies.png')
 
         self.endDirectory()
-		
-    def lists(self, lite=False):
-        self.addDirectoryItem('One Clickers And Indexes', 'lists', 'tid-bits.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('XXX Pieces Adults Only', 'xxx', 'xxx.png', 'DefaultTVShows.png')
-        self.endDirectory()
 
     def tvshows(self, lite=False):
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
@@ -158,7 +177,11 @@ class navigator:
 
         self.endDirectory()
 
-
+    def resistd(self, lite=False):
+        self.addDirectoryItem('One Clickers And Indexes', 'lists', 'tid-bits.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('XXX Pieces Adults Only', 'lists2', 'xxx.png', 'DefaultTVShows.png')
+        self.endDirectory()
+        
     def mytvshows(self, lite=False):
         try:
             self.accountCheck()

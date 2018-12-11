@@ -560,7 +560,7 @@ class sources:
             except:
                 pass
 
-        if control.addonInfo('id') == 'plugin.video.Frankenstein':
+        if control.addonInfo('id') == 'plugin.video.bennu':
             try:
                 if progressDialog: progressDialog.update(100, control.lang(30726).encode('utf-8'), control.lang(30731).encode('utf-8'))
 
@@ -581,11 +581,11 @@ class sources:
                     return u
                 else:
                     meta = '{"title": "%s", "year": "%s", "imdb": "%s"}' % (title, year, imdb)
-                    '''control.window.clearProperty("plugin.video.Frankenstein.container.items")
-                    control.window.setProperty("plugin.video.Frankenstein.container.items", json.dumps(items))
+                    '''control.window.clearProperty("plugin.video.bennu.container.items")
+                    control.window.setProperty("plugin.video.bennu.container.items", json.dumps(items))
                     
-                    control.window.clearProperty("plugin.video.Frankenstein.container.meta")
-                    control.window.setProperty("plugin.video.Frankenstein.container.meta", meta)'''
+                    control.window.clearProperty("plugin.video.bennu.container.meta")
+                    control.window.setProperty("plugin.video.bennu.container.meta", meta)'''
                     control.window.clearProperty(self.itemProperty)
                     control.window.setProperty(self.itemProperty, json.dumps(items))
                     
@@ -1173,9 +1173,9 @@ class sources:
         return title
 
     def getConstants(self):
-        self.itemProperty = 'plugin.video.Frankenstein.container.items'
+        self.itemProperty = 'plugin.video.Resistance.container.items'
 
-        self.metaProperty = 'plugin.video.Frankenstein.container.meta'
+        self.metaProperty = 'plugin.video.Resistance.container.meta'
 
         from globalscrapers import sources
 

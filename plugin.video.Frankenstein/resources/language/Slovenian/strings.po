@@ -221,24 +221,24 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr "[B]NASTAVITVE[/B] : Ponudniki"
 
 msgctxt "#32048"
-msgid "[B]EXODUS[/B] : Downloads"
-msgstr "[B]EXODUS[/B] : Prenosi"
+msgid "[B]Frankenstein[/B] : Downloads"
+msgstr "[B]Frankenstein[/B] : Prenosi"
 
 msgctxt "#32049"
-msgid "[B]EXODUS[/B] : Viewtypes"
-msgstr "[B]EXODUS[/B] : Pogledi"
+msgid "[B]Frankenstein[/B] : Viewtypes"
+msgstr "[B]Frankenstein[/B] : Pogledi"
 
 msgctxt "#32050"
-msgid "[B]EXODUS[/B] : Clear providers..."
-msgstr "[B]EXODUS[/B] : Počisti ponudnike..."
+msgid "[B]Frankenstein[/B] : Clear providers..."
+msgstr "[B]Frankenstein[/B] : Počisti ponudnike..."
 
 msgctxt "#32051"
-msgid "[B]EXODUS[/B] : Clear metadata..."
-msgstr "[B]EXODUS[/B] : Počisti metadata..."
+msgid "[B]Frankenstein[/B] : Clear metadata..."
+msgstr "[B]Frankenstein[/B] : Počisti metadata..."
 
 msgctxt "#32052"
-msgid "[B]EXODUS[/B] : Clear cache..."
-msgstr "[B]EXODUS[/B] : Počisti predpomnilnik..."
+msgid "[B]Frankenstein[/B] : Clear cache..."
+msgstr "[B]Frankenstein[/B] : Počisti predpomnilnik..."
 
 msgctxt "#32053"
 msgid "[I]Next Page[/I]"
@@ -575,7 +575,7 @@ msgstr "Pretokov ni na voljo"
 
 msgctxt "#32402"
 msgid "Playback outside Frankenstein is not allowed"
-msgstr "Predvajanje izven EXODUS-a ni dovoljeno"
+msgstr "Predvajanje izven Frankenstein-a ni dovoljeno"
 
 msgctxt "#32403"
 msgid "Download"

@@ -1,21 +1,27 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Frankenstein Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+# -*- coding: UTF-8 -*-
+#           ________
+#          _,.-Y  |  |  Y-._
+#      .-~"   ||  |  |  |   "-.
+#      I" ""=="|" !""! "|"[]""|     _____
+#      L__  [] |..------|:   _[----I" .-{"-.
+#     I___|  ..| l______|l_ [__L]_[I_/r(=}=-P
+#    [L______L_[________]______j~  '-=c_]/=-^
+#     \_I_j.--.\==I|I==_/.--L_]
+#       [_((==)[`-----"](==)j
+#          I--I"~~"""~~"I--I
+#          |[]|         |[]|
+#          l__j         l__j
+#         |!!|         |!!|
+#          |..|         |..|
+#          ([])         ([])
+#          ]--[         ]--[
+#          [_L]         [_L]
+#         /|..|\       /|..|\
+#        `=}--{='     `=}--{='
+#       .-^--r-^-.   .-^--r-^-.
+# Resistance is futile @lock_down... 
 
 
 from resources.lib.modules import trakt
@@ -61,30 +67,32 @@ class movies:
         self.tm_art_link = 'http://api.themoviedb.org/3/movie/%s/images?api_key=%s&language=en-US&include_image_language=en,%s,null' % ('%s', self.tm_user, self.lang)
         self.tm_img_link = 'https://image.tmdb.org/t/p/w%s%s'
 
+        self.search_link = 'http://api.trakt.tv/search/movie?limit=20&page=1&query='
+        self.fanart_tv_art_link = 'http://webservice.fanart.tv/v3/movies/%s'
+        self.fanart_tv_level_link = 'http://webservice.fanart.tv/v3/level'
+        self.tm_art_link = 'http://api.themoviedb.org/3/movie/%s/images?api_key=%s&language=en-US&include_image_language=en,%s,null' % ('%s', self.tm_user, self.lang)
+        self.tm_img_link = 'https://image.tmdb.org/t/p/w%s%s'
         self.persons_link = 'http://www.imdb.com/search/name?count=100&name='
         self.personlist_link = 'http://www.imdb.com/search/name?count=100&gender=male,female'
         self.person_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&role=%s&sort=year,desc&count=40&start=1'
         self.keyword_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&keywords=%s&sort=moviemeter,asc&count=40&start=1'
         self.oscars_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&groups=oscar_best_picture_winners&sort=year,desc&count=40&start=1'
-        self.theaters_link = 'http://www.imdb.com/search/title?title_type=feature&num_votes=1000,&release_date=date[365],date[0]&sort=release_date_us,desc&count=40&start=1'
+        self.theaters_link = 'https://www.imdb.com/movies-in-theaters/?ref_=nv_mv_inth'
         self.year_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&year=%s,%s&sort=moviemeter,asc&count=40&start=1'
-
-        if self.hidecinema == 'true':
-            self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&release_date=,date[90]&sort=moviemeter,asc&count=40&start=1'
-            self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&release_date=,date[90]&count=40&start=1'
-            self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[90]&sort=moviemeter,asc&count=40&start=1'
-            self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[90]&genres=%s&sort=moviemeter,asc&count=40&start=1'
-            self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
-            self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
-            self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&release_date=,date[90]&count=40&start=1'
-        else:
-            self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&sort=moviemeter,asc&count=40&start=1'
-            self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&count=40&start=1'
-            self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1'
-            self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&genres=%s&sort=moviemeter,asc&count=40&start=1'
-            self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
-            self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
-            self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&release_date=,date[90]&sort=moviemeter,asc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&release_date=,date[90]&count=40&start=1'
+        self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[90]&sort=moviemeter,asc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[90]&genres=%s&sort=moviemeter,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
+        self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=moviemeter,asc&release_date=,date[90]&count=40&start=1'
+        self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&release_date=,date[90]&count=40&start=1'
+        self.popular_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&groups=top_1000&sort=moviemeter,asc&count=40&start=1'
+        self.views_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&sort=num_votes,desc&count=40&start=1'
+        self.featured_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=1000,&production_status=released&release_date=date[365],date[60]&sort=moviemeter,asc&count=40&start=1'
+        self.genre_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie,documentary&num_votes=100,&release_date=,date[0]&genres=%s&sort=moviemeter,asc&count=40&start=1'
+        self.language_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&primary_language=%s&sort=moviemeter,asc&count=40&start=1'
+        self.certification_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&num_votes=100,&production_status=released&certificates=us:%s&sort=moviemeter,asc&count=40&start=1'
+        self.boxoffice_link = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&production_status=released&sort=boxoffice_gross_us,desc&count=40&start=1'
 
         self.added_link  = 'http://www.imdb.com/search/title?title_type=feature,tv_movie&languages=en&num_votes=500,&production_status=released&release_date=%s,%s&sort=release_date,desc&count=20&start=1' % (self.year_date, self.today_date)
         self.trending_link = 'http://api.trakt.tv/movies/trending?limit=40&page=1'
@@ -202,17 +210,18 @@ class movies:
 
             if (q == None or q == ''): return
 
-            try: from sqlite3 import dbapi2 as database
-            except: from pysqlite2 import dbapi2 as database
+            #try: from sqlite3 import dbapi2 as database
+            #except: from pysqlite2 import dbapi2 as database
 
-            dbcon = database.connect(control.searchFile)
-            dbcur = dbcon.cursor()
-            dbcur.execute("INSERT INTO movies VALUES (?,?)", (None,q))
-            dbcon.commit()
-            dbcur.close()
-            url = self.search_link + urllib.quote_plus(q)
-            url = '%s?action=moviePage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
-            control.execute('Container.Update(%s)' % url)
+            #dbcon = database.connect(control.searchFile)
+            #dbcur = dbcon.cursor()
+            #dbcur.execute("INSERT INTO movies VALUES (?,?)", (None,q))
+            #dbcon.commit()
+            #dbcur.close()
+            url = self.search_link + q.replace(" ", "+")
+            #url = '%s?action=moviePage&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            #control.execute('Container.Update(%s)' % url)
+            movies().get(url)
 
     def search_term(self, name):
             control.idle()
@@ -231,9 +240,10 @@ class movies:
 
             if (q == None or q == ''): return
 
-            url = self.persons_link + urllib.quote_plus(q)
-            url = '%s?action=moviePersons&url=%s' % (sys.argv[0], urllib.quote_plus(url))
-            control.execute('Container.Update(%s)' % url)
+            url = self.persons_link + q.replace(" ","+")
+            #url = '%s?action=moviePersons&url=%s' % (sys.argv[0], urllib.quote_plus(url))
+            #control.execute('Container.Update(%s)' % url)
+            movies().persons(url)
         except:
             return
 
@@ -941,7 +951,7 @@ class movies:
                 url = '%s?action=play1&title=%s&year=%s&imdb=%s&meta=%s&t=%s' % (sysaddon, systitle, year, imdb, sysmeta, self.systime)
                 sysurl = urllib.quote_plus(url)
 
-                path = '%s?action=play1&title=%s&year=%s&imdb=%s' % (sysaddon, systitle, year, imdb)
+                path = '%s?action=play&title=%s&year=%s&imdb=%s' % (sysaddon, systitle, year, imdb)
 
 
                 cm = []

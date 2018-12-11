@@ -218,24 +218,24 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr "[B]SETTINGS[/B] : プロバイダ"
 
 msgctxt "#32048"
-msgid "[B]EXODUS[/B] : Downloads"
-msgstr "[B]EXODUS[/B] : ダウンロード"
+msgid "[B]Frankenstein[/B] : Downloads"
+msgstr "[B]Frankenstein[/B] : ダウンロード"
 
 msgctxt "#32049"
-msgid "[B]EXODUS[/B] : Viewtypes"
-msgstr "[B]EXODUS[/B] : 表示タイプ"
+msgid "[B]Frankenstein[/B] : Viewtypes"
+msgstr "[B]Frankenstein[/B] : 表示タイプ"
 
 msgctxt "#32050"
-msgid "[B]EXODUS[/B] : Clear providers..."
-msgstr "[B]EXODUS[/B] : プロバイダリストを消去..."
+msgid "[B]Frankenstein[/B] : Clear providers..."
+msgstr "[B]Frankenstein[/B] : プロバイダリストを消去..."
 
 msgctxt "#32051"
-msgid "[B]EXODUS[/B] : Clear metadata..."
-msgstr "[B]EXODUS[/B] : metadataを消去..."
+msgid "[B]Frankenstein[/B] : Clear metadata..."
+msgstr "[B]Frankenstein[/B] : metadataを消去..."
 
 msgctxt "#32052"
-msgid "[B]EXODUS[/B] : Clear cache..."
-msgstr "[B]EXODUS[/B] : キャッシュを消去..."
+msgid "[B]Frankenstein[/B] : Clear cache..."
+msgstr "[B]Frankenstein[/B] : キャッシュを消去..."
 
 msgctxt "#32053"
 msgid "[I]Next Page[/I]"
@@ -292,11 +292,11 @@ msgstr "キューに入れる"
 
 msgctxt "#32066"
 msgid "Watched in Frankenstein"
-msgstr "Exodusで視聴済"
+msgstr "RESISTANCEで視聴済"
 
 msgctxt "#32067"
 msgid "Unwatched in Frankenstein"
-msgstr "Exodusで未視聴"
+msgstr "RESISTANCEで未視聴"
 
 msgctxt "#32068"
 msgid "Watched in Trakt"
@@ -572,7 +572,7 @@ msgstr "ストリームが存在しません"
 
 msgctxt "#32402"
 msgid "Playback outside Frankenstein is not allowed"
-msgstr "Exodusでの再生は許可されていません"
+msgstr "RESISTANCEでの再生は許可されていません"
 
 msgctxt "#32403"
 msgid "Download"

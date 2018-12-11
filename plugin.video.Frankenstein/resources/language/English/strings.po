@@ -1,4 +1,4 @@
-# Addon Name: Incurison
+# Addon Name: Frankenstein
 # Addon id: plugin.video.Frankenstein
 # Addon Provider: Frankenstein
 # Translators:
@@ -220,23 +220,23 @@ msgid "[B]SETTINGS[/B] : Providers"
 msgstr ""
 
 msgctxt "#32048"
-msgid "[B]EXODUS[/B] : Downloads"
+msgid "[B]Frankenstein[/B] : Downloads"
 msgstr ""
 
 msgctxt "#32049"
-msgid "[B]EXODUS[/B] : Viewtypes"
+msgid "[B]Frankenstein[/B] : Viewtypes"
 msgstr ""
 
 msgctxt "#32050"
-msgid "[B]EXODUS[/B] : Clear providers..."
+msgid "[B]Frankenstein[/B] : Clear providers..."
 msgstr ""
 
 msgctxt "#32051"
-msgid "[B]EXODUS[/B] : Clear metadata..."
+msgid "[B]Frankenstein[/B] : Clear metadata..."
 msgstr ""
 
 msgctxt "#32052"
-msgid "[B]EXODUS[/B] : Clear cache..."
+msgid "[B]Frankenstein[/B] : Clear cache..."
 msgstr ""
 
 msgctxt "#32053"
@@ -772,7 +772,7 @@ msgid "Are you sure?"
 msgstr ""
 
 msgctxt "#32556"
-msgid "[B]EXODUS[/B] : Library"
+msgid "[B]Frankenstein[/B] : Library"
 msgstr ""
 
 msgctxt "#32557"
@@ -920,7 +920,7 @@ msgid "New search..."
 msgstr ""
 
 msgctxt "#32604"
-msgid "[B]EXODUS[/B] : Clear search history..."
+msgid "[B]Frankenstein[/B] : Clear search history..."
 msgstr ""
 
 msgctxt "#32605"

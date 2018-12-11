@@ -1,21 +1,27 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Frankenstein Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+# -*- coding: UTF-8 -*-
+#           ________
+#          _,.-Y  |  |  Y-._
+#      .-~"   ||  |  |  |   "-.
+#      I" ""=="|" !""! "|"[]""|     _____
+#      L__  [] |..------|:   _[----I" .-{"-.
+#     I___|  ..| l______|l_ [__L]_[I_/r(=}=-P
+#    [L______L_[________]______j~  '-=c_]/=-^
+#     \_I_j.--.\==I|I==_/.--L_]
+#       [_((==)[`-----"](==)j
+#          I--I"~~"""~~"I--I
+#          |[]|         |[]|
+#          l__j         l__j
+#         |!!|         |!!|
+#          |..|         |..|
+#          ([])         ([])
+#          ]--[         ]--[
+#          [_L]         [_L]
+#         /|..|\       /|..|\
+#        `=}--{='     `=}--{='
+#       .-^--r-^-.   .-^--r-^-.
+# Resistance is futile @lock_down... 
 
 
 from resources.lib.modules import trakt
@@ -1454,7 +1460,7 @@ class episodes:
                 url = '%s?action=play1&title=%s&year=%s&imdb=%s&tvdb=%s&season=%s&episode=%s&tvshowtitle=%s&premiered=%s&meta=%s&t=%s' % (sysaddon, systitle, year, imdb, tvdb, season, episode, systvshowtitle, syspremiered, sysmeta, self.systime)
                 sysurl = urllib.quote_plus(url)
 
-                path = '%s?action=play1&title=%s&year=%s&imdb=%s&tvdb=%s&season=%s&episode=%s&tvshowtitle=%s&premiered=%s' % (sysaddon, systitle, year, imdb, tvdb, season, episode, systvshowtitle, syspremiered)
+                path = '%s?action=play&title=%s&year=%s&imdb=%s&tvdb=%s&season=%s&episode=%s&tvshowtitle=%s&premiered=%s' % (sysaddon, systitle, year, imdb, tvdb, season, episode, systvshowtitle, syspremiered)
 
                 if isFolder == True:
                     url = '%s?action=episodes&tvshowtitle=%s&year=%s&imdb=%s&tvdb=%s&season=%s&episode=%s' % (sysaddon, systvshowtitle, year, imdb, tvdb, season, episode)

@@ -260,17 +260,16 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.Frankenstein" version="1.0.0" name="Frankenstein" provider-name="Frankenstein">
+<addon id="plugin.video.Frankenstein" version="7.2.1" name="Frankenstein" provider-name="Frankenstein">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.Frankenstein" />
-		<import addon="script.Frankenstein.artwork" />
 		<import addon="script.Frankenstein.metadata" />
+		<import addon="script.Frankenstein.artwork" />
 		<import addon="script.module.resolveurl" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.globalscrapers"/>
-
 		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.globalscrapers"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="Frankenstein.py">
 		<provides>video</provides>
@@ -278,16 +277,16 @@
 	<extension point="xbmc.service" library="service.py" start="startup" />
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Frankenstein</summary>
-		<description lang="en">Kindly note that Frankenstein is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-        <platform>all</platform>
+		<description lang="en">Frankenstein</description>
+		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-    			<screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
 		</news>
@@ -597,6 +596,35 @@
 	</extension>
 </addon>
 
+<addon
+  id="plugin.video.SportsDevil"
+  version="2018.09.20"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="plugin.video.f4mTester" />
+   <import addon="script.module.slproxy" />
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service/streamlink_proxy.py" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil</summary>
+    <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+    <disclaimer lang="en">There can only be one.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.toonmania2" name="Toonmania2" version="0.4.6" provider-name="doko, MetalKettle">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
@@ -878,7 +906,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.25" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.26" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
@@ -957,7 +985,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="script.Frankenstein.artwork" version="1.0.0" name="Frankenstein Artwork" provider-name="Frankenstein">
+<addon id="script.Frankenstein.artwork" version="1.0.7" name="Frankenstein Artwork" provider-name="Frankenstein">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0"/>
 	</requires>
@@ -1064,15 +1092,20 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="script.module.Frankenstein" name="Frankenstein Module" version="1.1" provider-name="Frankenstein">
+<addon id="script.module.Frankenstein" name="Frankenstein Module" version="7.8.7.7" provider-name="Frankenstein">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.simplejson"/>
+		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.xmltodict" version="0.9.0" />
+		<import addon="plugin.video.SportsDevil"/>
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">Frankenstein</summary>
+		<summary lang="en">Frankenstein Plugin For Movies TV Shows Playlists</summary>
 	</extension>
 </addon>
 

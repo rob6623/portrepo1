@@ -31,18 +31,17 @@ def syncTraktLibrary():
 try:
     ModuleVersion = control.addon('script.module.Frankenstein').getAddonInfo('version')
     AddonVersion = control.addon('plugin.video.Frankenstein').getAddonInfo('version')
-    #RepoVersion = control.addon('repository.Frankenstein').getAddonInfo('version')
+    
 
-    log_utils.log('######################### EXODUS ############################', log_utils.LOGNOTICE)
-    log_utils.log('####### CURRENT EXODUS VERSIONS REPORT ######################', log_utils.LOGNOTICE)
-    log_utils.log('### EXODUS PLUGIN VERSION: %s ###' % str(AddonVersion), log_utils.LOGNOTICE)
-    log_utils.log('### EXODUS SCRIPT VERSION: %s ###' % str(ModuleVersion), log_utils.LOGNOTICE)
-    #log_utils.log('### EXODUS REPOSITORY VERSION: %s ###' % str(RepoVersion), log_utils.LOGNOTICE)
+    log_utils.log('######################### Frankenstein ############################', log_utils.LOGNOTICE)
+    log_utils.log('####### CURRENT Frankenstein VERSIONS REPORT ######################', log_utils.LOGNOTICE)
+    log_utils.log('### Frankenstein PLUGIN VERSION: %s ###' % str(AddonVersion), log_utils.LOGNOTICE)
+    log_utils.log('### Frankenstein SCRIPT VERSION: %s ###' % str(ModuleVersion), log_utils.LOGNOTICE)
     log_utils.log('###############################################################', log_utils.LOGNOTICE)
 except:
-    log_utils.log('######################### EXODUS ############################', log_utils.LOGNOTICE)
-    log_utils.log('####### CURRENT EXODUS VERSIONS REPORT ######################', log_utils.LOGNOTICE)
-    log_utils.log('### ERROR GETTING EXODUS VERSIONS - NO HELP WILL BE GIVEN AS THIS IS NOT AN OFFICIAL EXODUS INSTALL. ###', log_utils.LOGNOTICE)
+    log_utils.log('######################### Frankenstein ############################', log_utils.LOGNOTICE)
+    log_utils.log('####### CURRENT Frankenstein VERSIONS REPORT ######################', log_utils.LOGNOTICE)
+    log_utils.log('### ERROR GETTING Frankenstein VERSIONS - NO HELP WILL BE GIVEN AS THIS IS NOT AN OFFICIAL Frankenstein INSTALL. ###', log_utils.LOGNOTICE)
     log_utils.log('###############################################################', log_utils.LOGNOTICE)
 
 if control.setting('autoTraktOnStart') == 'true':

@@ -1,21 +1,27 @@
 # -*- coding: utf-8 -*-
 
-'''
-    Frankenstein Add-on
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-'''
+# -*- coding: UTF-8 -*-
+#           ________
+#          _,.-Y  |  |  Y-._
+#      .-~"   ||  |  |  |   "-.
+#      I" ""=="|" !""! "|"[]""|     _____
+#      L__  [] |..------|:   _[----I" .-{"-.
+#     I___|  ..| l______|l_ [__L]_[I_/r(=}=-P
+#    [L______L_[________]______j~  '-=c_]/=-^
+#     \_I_j.--.\==I|I==_/.--L_]
+#       [_((==)[`-----"](==)j
+#          I--I"~~"""~~"I--I
+#          |[]|         |[]|
+#          l__j         l__j
+#         |!!|         |!!|
+#          |..|         |..|
+#          ([])         ([])
+#          ]--[         ]--[
+#          [_L]         [_L]
+#         /|..|\       /|..|\
+#        `=}--{='     `=}--{='
+#       .-^--r-^-.   .-^--r-^-.
+# Resistance is futile @lock_down... 
 
 
 import re,sys,cookielib,urllib,urllib2,urlparse,gzip,StringIO,HTMLParser,time,random,base64,xbmc
@@ -467,7 +473,7 @@ class bfcookie:
 
     # not very robust but lazieness...
     def getCookieString(self, content, rcksid):
-        vars = re.findall('toNumbers\("([^"]+)"', content)
+        vars = re.findall('toresistance\("([^"]+)"', content)
         value = self._decrypt(vars[2], vars[0], vars[1])
         cookie = "%s=%s;%s" % (self.COOKIE_NAME, value, rcksid)
         return cookie

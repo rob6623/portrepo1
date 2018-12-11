@@ -2,7 +2,7 @@
 <settings>
     <category label="32310">
         <setting id="appearance.alt" type="action" label="32311" default="-" option="close" action="RunPlugin(plugin://plugin.video.Frankenstein/?action=artwork)" visible="!System.HasAddon(script.Frankenstein.artwork)" />
-        <setting id="appearance.1" type="select" label="32311" values="Frankenstein" default="Frankenstein" visible="System.HasAddon(script.Frankenstein.artwork)" />
+        <setting id="appearance.1" type="select" label="32311" values="Exuary|frankenstein|Stealth" default="frankenstein" visible="System.HasAddon(script.Frankenstein.artwork)" />
         <setting id="scrapers.timeout.1" type="slider" label="32312" default="60" range="10,60" option="int" />
         <setting id="trakt.user" type="text" default="" visible="false" />
         <setting id="indicators.alt" type="enum" label="32313" lvalues="32314|32315" default="1" visible="!eq(-1,)" />
@@ -240,6 +240,12 @@
         <setting type="lsep" label="Your login details are not protected" />
         <setting id="chillax.username" type="text" label="32303" default="" />
         <setting id="chillax.password" type="text" option="hidden" label="32307" default="" />
+        <setting type="sep" />
+        <setting type="lsep" label="Furk.net" />
+        <setting id="furk.user_name" type="text" label="Furk Username" default="" />
+        <setting id="furk.user_pass" type="text" label="Furk Password" option="hidden" default="" />
+        <setting id="furk.api" type="text" label="Furk API Key" default="" />
+        <setting id="furk.limit" label="Limit results" type="slider" default="25" range="5,5,200" option="int" />
         <setting type="sep" />
         <setting type="lsep" label="segos.es" />
         <setting type="lsep" label="Need for more sources in PL scrapper segos" />

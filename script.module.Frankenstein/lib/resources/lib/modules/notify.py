@@ -6,8 +6,8 @@ import urllib2,urllib
 import re
 import time
 from datetime import date, datetime, timedelta
-ADDON_ID            = 'script.module.Frankenstien'
-AddonTitle          = 'Frankenstien'
+ADDON_ID            = 'script.module.Frankenstein'
+AddonTitle          = 'Frankenstein'
 fanart              = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID , 'fanart.jpg'))
 icon                = xbmc.translatePath(os.path.join('special://home/addons/' + ADDON_ID, 'icon.png'))
 setting             = xbmcaddon.Addon().getSetting

@@ -20,6 +20,8 @@
 
 import urlparse,sys,urllib
 from resources.lib.modules import control
+
+
 import xbmcgui
 
 params = dict(urlparse.parse_qsl(sys.argv[2].replace('?','')))
@@ -63,13 +65,55 @@ content = params.get('content')
 windowedtrailer = params.get('windowedtrailer')
 windowedtrailer = int(windowedtrailer) if windowedtrailer in ("0","1") else 0
 
+
+
+######################LISTS SCRAPER1#################################   
+
+if action == 'lists2':
+    from resources.lib.indexers import lists2
+    lists2.indexer().root()
+
+elif action == 'directory':
+    from resources.lib.indexers import lists2
+    lists2.indexer().get(url)
+
+elif action == 'qdirectory':
+    from resources.lib.indexers import lists2
+    lists2.indexer().getq(url)
+
+elif action == 'xdirectory':
+    from resources.lib.indexers import lists2
+    lists2.indexer().getx(url)
+
+elif action == 'developer':
+    from resources.lib.indexers import lists2
+    lists2.indexer().developer()
+
+elif action == 'tvtuner':
+    from resources.lib.indexers import lists2
+    lists2.indexer().tvtuner(url)
+
+elif 'youtube' in str(action):
+    from resources.lib.indexers import lists2
+    lists2.indexer().youtube(url, action)
+
+elif action == 'play3':
+    from resources.lib.indexers import lists2
+    lists2.player().play(url, content)
+
+elif action == 'browser':
+    from resources.lib.indexers import lists2
+    lists2.resolver().browser(url)
+
+######################LISTS SCRAPER#################################
+
 if action == 'lists':
     from resources.lib.indexers import lists
     lists.indexer().root()
 
-elif action == 'listNavigator':
+elif action == 'resistdNavigator':
     from resources.lib.indexers import navigator
-    navigator.navigator().lists()    
+    navigator.navigator().resistd()    
 
 elif action == 'directory':
     from resources.lib.indexers import lists
@@ -103,18 +147,6 @@ elif action == 'browser':
     from resources.lib.indexers import lists
     lists.resolver().browser(url)
 
-elif action == 'searchdirect':
-    from resources.lib.indexers import lists
-    lists.indexer().search(url=None)
-
-elif action == 'addSearch':
-    from resources.lib.indexers import lists
-    lists.indexer().addSearch(url)
-
-elif action == 'delSearch':
-    from resources.lib.indexers import lists
-    lists.indexer().delSearch()
-
 elif action == 'queueItem':
     from resources.lib.modules import control
     control.queueItem()
@@ -122,6 +154,10 @@ elif action == 'queueItem':
 elif action == 'openSettings':
     from resources.lib.modules import control
     control.openSettings()
+
+elif action == 'urlresolverSettings':
+    from resources.lib.modules import control
+    control.openSettings(id='script.module.urlresolver')
 
 elif action == 'addView':
     from resources.lib.modules import views
@@ -146,53 +182,7 @@ elif action == 'startDownload':
 elif action == 'startDownloadThread':
     from resources.lib.modules import downloader
     downloader.startDownloadThread()
-###############################################################################################################
-# ________  ________  ___       ___  ________                 ________  ________   ________  ___  __    _______      
-#|\   ____\|\   __  \|\  \     |\  \|\   ___ \               |\   ____\|\   ___  \|\   __  \|\  \|\  \ |\  ___ \     
-#\ \  \___|\ \  \|\  \ \  \    \ \  \ \  \_|\ \  ____________\ \  \___|\ \  \\ \  \ \  \|\  \ \  \/  /|\ \   __/|    
-# \ \_____  \ \  \\\  \ \  \    \ \  \ \  \ \\ \|\____________\ \_____  \ \  \\ \  \ \   __  \ \   ___  \ \  \_|/__  
-#  \|____|\  \ \  \\\  \ \  \____\ \  \ \  \_\\ \|____________|\|____|\  \ \  \\ \  \ \  \ \  \ \  \\ \  \ \  \_|\ \ 
-#    ____\_\  \ \_______\ \_______\ \__\ \_______\               ____\_\  \ \__\\ \__\ \__\ \__\ \__\\ \__\ \_______\
-#   |\_________\|_______|\|_______|\|__|\|_______|              |\_________\|__| \|__|\|__|\|__|\|__| \|__|\|_______|
-#   \|_________|                                                \|_________|                                         
-#                                                                                                                    
-################################################################################################################                                                                                                                    
-#############################################################
-#´´´´´´´´´´´´´´´´´´´ ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´´´´`#
-#´´´´´´´´´´´´´´´´´¶¶¶¶¶¶´´´´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´´´´´´´#
-#´´´´´´´´´´´´´´¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶´´´´´´´´´´´´´´#
-#´´´´´´´´´´´´´¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´´´#
-#´´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´´#
-#´´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´`´´´´´´´´´´´¶¶´´´´´´´´´´`#
-#´´´´´´´´´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´´´´´´´´´#
-#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´¶¶´´´´´´´´´´#
-#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶´´´´´´´´´´#
-#´´´´´´´´´´¶¶´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶´´´´´´´´´´#
-#´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´¶¶´´´´´´´´´´#
-#´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶¶´´´´´´´´´´#
-#´´´´´´´´´´´¶¶´¶¶´´´¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶´´´¶¶´¶¶´´´´´´´´´´´#
-#´´´´´´´´´´´´¶¶¶¶´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶´¶¶¶¶¶´´´´´´´´´´´#
-#´´´´´´´´´´´´´¶¶¶´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶´¶¶¶´´´´´´´´´´´´´#
-#´´´´¶¶¶´´´´´´´¶¶´´¶¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶¶¶´´¶¶´´´´´´¶¶¶¶´´´#
-#´´´¶¶¶¶¶´´´´´¶¶´´´¶¶¶¶¶¶¶´´´¶¶¶´´´¶¶¶¶¶¶¶´´´¶¶´´´´´¶¶¶¶¶¶´´#
-#´´¶¶´´´¶¶´´´´¶¶´´´´´¶¶¶´´´´¶¶¶¶¶´´´´¶¶¶´´´´´¶¶´´´´¶¶´´´¶¶´´#
-#´¶¶¶´´´´¶¶¶¶´´¶¶´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´¶¶´´¶¶¶¶´´´´¶¶¶´#
-#¶¶´´´´´´´´´¶¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶´´´´´´´¶¶¶¶¶¶¶¶¶´´´´´´´´¶¶#
-#¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶´´´´¶¶¶¶¶¶¶´´´´¶¶¶¶¶¶¶¶´´´´´´¶¶¶¶¶¶¶¶#
-#´´¶¶¶¶´¶¶¶¶¶´´´´´´¶¶¶¶¶´´´´´´´´´´´´´´¶¶¶´¶¶´´´´´¶¶¶¶¶¶´¶¶¶´#
-#´´´´´´´´´´¶¶¶¶¶¶´´¶¶¶´´¶¶´´´´´´´´´´´¶¶´´¶¶¶´´¶¶¶¶¶¶´´´´´´´´#
-#´´´´´´´´´´´´´´¶¶¶¶¶¶´¶¶´¶¶¶¶¶¶¶¶¶¶¶´¶¶´¶¶¶¶¶¶´´´´´´´´´´´´´´#
-#´´´´´´´´´´´´´´´´´´¶¶´¶¶´¶´¶´¶´¶´¶´¶´¶´¶´¶¶´´´´´´´´´´´´´´´´´#
-#´´´´´´´´´´´´´´´´¶¶¶¶´´¶´¶´¶´¶´¶´¶´¶´¶´´´¶¶¶¶¶´´´´´´´´´´´´´´#
-#´´´´´´´´´´´´¶¶¶¶¶´¶¶´´´¶¶¶¶¶¶¶¶¶¶¶¶¶´´´¶¶´¶¶¶¶¶´´´´´´´´´´´´#
-#´´´´¶¶¶¶¶¶¶¶¶¶´´´´´¶¶´´´´´´´´´´´´´´´´´¶¶´´´´´´¶¶¶¶¶¶¶¶¶´´´´#
-#´´´¶¶´´´´´´´´´´´¶¶¶¶¶¶¶´´´´´´´´´´´´´¶¶¶¶¶¶¶¶´´´´´´´´´´¶¶´´´#
-#´´´´¶¶¶´´´´´¶¶¶¶¶´´´´´¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶´´´´´¶¶¶¶¶´´´´´¶¶¶´´´´#
-#´´´´´´¶¶´´´¶¶¶´´´´´´´´´´´¶¶¶¶¶¶¶¶¶´´´´´´´´´´´¶¶¶´´´¶¶´´´´´´#
-#´´´´´´¶¶´´¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶´´¶¶´´´´´´#
-#´´´´´´´¶¶¶¶´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´¶¶¶¶´´´´´´´#
-#########################BONECRUSHER#########################
-#                        ###########               
+
 elif action == 'stopDownload':
     from resources.lib.modules import downloader
     downloader.stopDownload()
@@ -207,66 +197,19 @@ elif action == 'trailer':
 
 elif action == 'clearCache1':
     from resources.lib.modules import cache
-    cache.clear()
+    cache.clear()   
 
-#######################################################################################
-#######################################################################################
+######################IMDB SCRAPER#################################
 
-if action == 'xxx':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().root()
-
-elif action == 'directory':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().get(url)
-
-elif action == 'qdirectory':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().getq(url)
-
-elif action == 'xdirectory':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().getx(url)
-
-elif action == 'developer':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().developer()
-
-elif action == 'tvtuner':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().tvtuner(url)
-
-elif 'youtube' in str(action):
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().youtube(url, action)
-
-elif action == 'play2':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.player().play2(url, content)
-
-elif action == 'browser':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.resolver().browser(url)
-
-elif action == 'search':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().search(url=None)
-
-elif action == 'addSearch':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().addSearch(url)
-
-elif action == 'delSearch':
-    from resources.lib.indexers import NamelessPlaylist
-    NamelessPlaylist.indexer().delSearch()
-
-##############################################################################################
 if action == None:
     from resources.lib.indexers import navigator
     from resources.lib.modules import cache
     cache.cache_version_check()
     navigator.navigator().root()
 
+elif action == 'ruSettings':
+    from resources.lib.modules import control
+    control.openSettings(id='script.module.resolveurl')    
 
 elif action == 'movieNavigator':
     from resources.lib.indexers import navigator
@@ -303,7 +246,7 @@ elif action == 'mytvliteNavigator':
 elif action == 'downloadNavigator':
     from resources.lib.indexers import navigator
     navigator.navigator().downloads()
-
+            
 elif action == 'libraryNavigator':
     from resources.lib.indexers import navigator
     navigator.navigator().library()
@@ -346,7 +289,7 @@ elif action == 'movieWidget':
 
 elif action == 'movieSearch':
     from resources.lib.indexers import movies
-    movies.movies().search()
+    movies.movies().search_new()
 
 elif action == 'movieSearchnew':
     from resources.lib.indexers import movies
@@ -398,7 +341,7 @@ elif action == 'tvshowPage':
 
 elif action == 'tvSearch':
     from resources.lib.indexers import tvshows
-    tvshows.tvshows().search()
+    tvshows.tvshows().search_new()
 
 elif action == 'tvSearchnew':
     from resources.lib.indexers import tvshows
