@@ -260,6 +260,39 @@
 	</extension>
 </addon>
 
+<addon id="plugin.video.dk" version="0.0.1" name="Dark Carnival" provider-name="Dark Karnival">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.dk" />
+		<import addon="script.dk.artwork" />
+		<import addon="script.dk.metadata" />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.requests" />
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="script.module.globalscrapers"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="dk.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Dark Carnival</summary>
+		<description lang="en">Dark Carnival</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<news>
+		</news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.Frankenstein" version="7.2.1" name="Frankenstein" provider-name="Frankenstein">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -906,7 +939,7 @@ provider-name="ToxicBonehead">
 	</extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.29" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.3" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
@@ -988,6 +1021,30 @@ provider-name="ToxicBonehead">
 	<extension point="xbmc.addon.metadata">
 		<summary>Metadata for the Darklove Addon</summary>
 		<description>Metadata for Darklove are maintained separately to make distribution of the the addon itself easier/faster.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.dk.artwork" version="0.0.1" name="Dark Carnival Artwork" provider-name="Dark Karnival">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Themes for the Dark Carnival Addon</summary>
+		<description></description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.dk.metadata" version="0.0.1" name="Dark Carnival Metadata" provider-name="Dark Karnival">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary>Metadata for the Dark Carnival Addon</summary>
+		<description>Metadata for Dark Carnival are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
 </addon>
@@ -1096,6 +1153,23 @@ provider-name="ToxicBonehead">
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Darklove</summary>
+	</extension>
+</addon>
+
+<addon id="script.module.dk" name="Dark Carnival Module" version="0.0.1" provider-name="Dark Karnival">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.beautifulsoup4"/>
+		<import addon="script.module.simplejson"/>
+		<import addon="script.module.python.koding.aio" version="0.9.6.6" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.xmltodict" version="0.9.0" />
+		<import addon="plugin.video.SportsDevil"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Dark Carnival Plugin For Movies TV Shows Playlists</summary>
 	</extension>
 </addon>
 
