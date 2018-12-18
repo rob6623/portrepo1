@@ -160,7 +160,7 @@ elif action == 'openSettings':
 
 elif action == 'urlresolverSettings':
     from resources.lib.modules import control
-    control.openSettings(id='script.module.urlresolver')
+    control.openSettings(id='script.module.resolveurl')
 
 elif action == 'addView':
     from resources.lib.modules import views
