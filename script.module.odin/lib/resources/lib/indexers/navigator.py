@@ -27,6 +27,7 @@ class navigator:
         self.addDirectoryItem('one click play and more', 'listsNavigator', 'index.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Tunes', 'radios', 'tunes.png', 'DefaultTVShows.png')
         self.addDirectoryItem('live tv and sports', 'tvnav', 'iptv.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Toons and anime', 'cartoon', 'toons.png', 'DefaultTVShows.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -118,7 +119,14 @@ class navigator:
         self.addDirectoryItem('Live Tv', 'lists5', 'iptv.png', 'DefaultTVShows.png')
         self.endDirectory()
 
+    def toons(self, lite=False):
+        self.addDirectoryItem('Anime Tv Shows', 'animetvNavigator', 'anime.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Anime Movies', 'animemovieNavigator', 'anime.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Toons Movies', 'toonmovieNavigator', 'toons.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Toons Tv Shows', 'toonstvNavigator', 'toons.png', 'DefaultTVShows.png')
+        self.endDirectory()
 
+	
     def tvshows(self, lite=False):
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
         self.addDirectoryItem(32016, 'tvNetworks', 'networks.png', 'DefaultTVShows.png')

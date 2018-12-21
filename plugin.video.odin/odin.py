@@ -1027,3 +1027,24 @@ elif action == 'updateLibrary':
 elif action == 'service':
     from resources.lib.modules import libtools
     libtools.libepisodes().service()
+
+##############################odintoons test ####################################################################
+elif action == 'cartoon':
+    from resources.lib.indexers import navigator
+    navigator.navigator().toons()
+
+elif action == 'toonmovieNavigator':
+    from resources.lib.indexers import odintoons
+    odintoons.movies().genres()
+
+elif action == 'animemovieNavigator':
+    from resources.lib.indexers import odintoons
+    odintoons.movies().animegenres()
+
+elif action == 'animetvNavigator':
+    from resources.lib.indexers import odintvtoons
+    odintvtoons.tvshows().animegenres()
+
+elif action == 'toonstvNavigator':
+    from resources.lib.indexers import odintvtoons
+    odintvtoons.tvshows().genres()

@@ -24,12 +24,12 @@ from resources.lib.modules import control
 from resources.lib.modules import client
 
 
-radio1fmicon = 'http://phoenixtv.offshorepastebin.com/art/radio1fm/icon.png'
-radio1fmfanart = 'http://phoenixtv.offshorepastebin.com/art/radio1fm/fanart.jpg'
-radio181fmicon = 'http://phoenixtv.offshorepastebin.com/art/radio181fm/icon.png'
-radio181fmfanart = 'http://phoenixtv.offshorepastebin.com/art/radio181fm/fanart.jpg'
-radiocasticon = 'http://phoenixtv.offshorepastebin.com/art/radiocast/icon.png'
-radiocastfanart = 'http://phoenixtv.offshorepastebin.com/art/radiocast/fanart.jpg'
+radio1fmicon = 'http://46.29.166.80/ads/odin/music/tunes.png'
+radio1fmfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
+radio181fmicon = 'http://46.29.166.80/ads/odin/music/tunes.png'
+radio181fmfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
+radiocasticon = 'http://46.29.166.80/ads/odin/music/tunes.png'
+radiocastfanart = 'http://46.29.166.80/ads/odin/music/fanart.jpg'
 
 
 def radios():
