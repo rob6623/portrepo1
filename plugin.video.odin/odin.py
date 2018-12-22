@@ -1048,3 +1048,45 @@ elif action == 'animetvNavigator':
 elif action == 'toonstvNavigator':
     from resources.lib.indexers import odintvtoons
     odintvtoons.tvshows().genres()
+################################3classics###############################
+elif action == 'classic':
+    from resources.lib.indexers import navigator
+    navigator.navigator().classic()
+	
+elif action == 'movieGenres50':
+    from resources.lib.indexers import classmov
+    classmov.movies().genres50()
+	
+elif action == 'movieGenres60':
+    from resources.lib.indexers import classmov
+    classmov.movies().genres60()
+	
+elif action == 'movieGenres70':
+    from resources.lib.indexers import classmov
+    classmov.movies().genres70()
+	
+elif action == 'movieGenres80':
+    from resources.lib.indexers import classmov
+    classmov.movies().genres80()
+
+elif action == 'tvGenres50':
+    from resources.lib.indexers import classtv
+    classtv.tvshows().genres50()
+
+	
+elif action == 'tvGenres50':
+    from resources.lib.indexers import classtv
+    classtv.tvshows().genres50()
+
+elif action == 'tvGenres60':
+    from resources.lib.indexers import classtv
+    classtv.tvshows().genres60()
+
+
+elif action == 'tvGenres70':
+    from resources.lib.indexers import classtv
+    classtv.tvshows().genres70()
+
+elif action == 'tvGenres80':
+    from resources.lib.indexers import classtv
+    classtv.tvshows().genres80()

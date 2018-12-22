@@ -28,6 +28,7 @@ class navigator:
         self.addDirectoryItem('Tunes', 'radios', 'tunes.png', 'DefaultTVShows.png')
         self.addDirectoryItem('live tv and sports', 'tvnav', 'iptv.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Toons and anime', 'cartoon', 'toons.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('classics', 'classic', 'toons.png', 'DefaultTVShows.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -126,6 +127,16 @@ class navigator:
         self.addDirectoryItem('Toons Tv Shows', 'toonstvNavigator', 'toons.png', 'DefaultTVShows.png')
         self.endDirectory()
 
+    def classic(self, lite=False):
+        self.addDirectoryItem('50s to 60s Movies', 'movieGenres50', 'movies.jpg', 'Defaultmovies.jpg')
+        self.addDirectoryItem('60s to 70s Movies', 'movieGenres60', 'movies.jpg', 'Defaultmovies.jpg')
+        self.addDirectoryItem('70s to 80s Movies', 'movieGenres70', 'movies.jpg', 'Defaultmovies.jpg')		
+        self.addDirectoryItem('80s to 90s Movies', 'movieGenres80', 'movies.jpg', 'Defaultmovies.jpg')		
+        self.addDirectoryItem('50s to 60s TV Shows', 'tvGenres50', 'tvshows.jpg', 'Defaultmovies.jpg')		
+        self.addDirectoryItem('60s to 70s TV Shows', 'tvGenres60', 'tvshows.jpg', 'Defaultmovies.jpg')		
+        self.addDirectoryItem('70s to 80s TV Shows', 'tvGenres70', 'tvshows.jpg', 'Defaultmovies.jpg')		
+        self.addDirectoryItem('80s to 90s TV Shows', 'tvGenres80', 'tvshows.jpg', 'Defaultmovies.jpg')
+        self.endDirectory()
 	
     def tvshows(self, lite=False):
         self.addDirectoryItem(32011, 'tvGenres', 'genres.png', 'DefaultTVShows.png')
