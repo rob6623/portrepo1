@@ -108,6 +108,12 @@ class navigator:
         self.addDirectoryItem(32021, 'movies&url=oscars', 'oscar-winners.png', 'DefaultMovies.png')
         self.addDirectoryItem(32022, 'movies&url=theaters', 'in-theaters.png', 'DefaultRecentlyAddedMovies.png')
         self.addDirectoryItem(32005, 'movieWidget', 'latest-movies.png', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem('Romance Movies', 'movieromNavigator', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Drama Movies', 'moviedramaNavigator', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem('50s to 60s Movies', 'movieGenres50', 'movies.png', 'Defaultmovies.png')
+        self.addDirectoryItem('60s to 70s Movies', 'movieGenres60', 'movies.png', 'Defaultmovies.png')
+        self.addDirectoryItem('70s to 80s Movies', 'movieGenres70', 'movies.png', 'Defaultmovies.png')		
+        self.addDirectoryItem('80s to 90s Movies', 'movieGenres80', 'movies.png', 'Defaultmovies.png')
 
         if lite == False:
             if not control.setting('lists.widget') == '0':
@@ -168,6 +174,13 @@ class navigator:
         self.addDirectoryItem(32006, 'calendar&url=added', 'latest-episodes.png', 'DefaultRecentlyAddedEpisodes.png', queue=True)
         self.addDirectoryItem(32027, 'calendars', 'calendar.png', 'DefaultRecentlyAddedEpisodes.png')
 
+        self.addDirectoryItem('Drama T.V', 'tvNavigatordrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Romance T.v', 'tvNavigatorrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('50s to 60s TV Shows', 'tvGenres50', 'tvshows.png', 'Defaultmovies.png')		
+        self.addDirectoryItem('60s to 70s TV Shows', 'tvGenres60', 'tvshows.png', 'Defaultmovies.png')		
+        self.addDirectoryItem('70s to 80s TV Shows', 'tvGenres70', 'tvshows.png', 'Defaultmovies.png')		
+        self.addDirectoryItem('80s to 90s TV Shows', 'tvGenres80', 'tvshows.png', 'Defaultmovies.png')
+
         if lite == False:
             if not control.setting('lists.widget') == '0':
                 self.addDirectoryItem(32004, 'mytvliteNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -181,7 +194,67 @@ class navigator:
         self.addDirectoryItem('One Clickers And Indexes', 'lists', 'tid-bits.png', 'DefaultTVShows.png')
         self.addDirectoryItem('XXX Pieces Adults Only', 'lists2', 'xxx.png', 'DefaultTVShows.png')
         self.endDirectory()
-        
+
+    def moviesdrama(self, lite=False):
+        self.addDirectoryItem(32011, 'movieGenresdrama', 'genres.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32012, 'movieYearsdrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32014, 'movieLanguagesdrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32015, 'movieCertificatesdrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32018, 'dkmov&url=populardrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32019, 'dkmov&url=viewsdrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32020, 'dkmov&url=boxofficedrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32021, 'dkmov&url=oscarsdrama', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32022, 'dkmov&url=theatersdrama', 'movies.png', 'DefaultRecentlyAddedMovies.png')
+        self.endDirectory()
+
+    def moviesrom(self, lite=False):
+        self.addDirectoryItem(32011, 'movieGenresrom', 'genres.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32012, 'movieYearsrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32014, 'movieLanguagesrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32015, 'movieCertificatesrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32017, 'dkmov&url=trendingrom', 'movies.png', 'DefaultRecentlyAddedMovies.png')
+        self.addDirectoryItem(32018, 'dkmov&url=popularrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32019, 'dkmov&url=viewsrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32020, 'dkmov&url=boxofficerom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32021, 'dkmov&url=oscarsrom', 'movies.png', 'DefaultMovies.png')
+        self.addDirectoryItem(32022, 'dkmov&url=theatersrom', 'movies.png', 'DefaultRecentlyAddedMovies.png')
+        self.endDirectory()
+
+    def tvshowsdrama(self, lite=False):
+        self.addDirectoryItem(32011, 'tvGenresdrama', 'genres.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32016, 'tvNetworks', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32014, 'tvLanguagesdrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32018, 'dktvshows&url=populardrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32023, 'dktvshows&url=ratingdrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32019, 'dktvshows&url=viewsdrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32024, 'dktvshows&url=airingdrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32026, 'dktvshows&url=premieredrama', 'tvshows.png', 'DefaultTVShows.png')
+        self.endDirectory()
+
+
+    def tvshowsrom(self, lite=False):
+        self.addDirectoryItem(32011, 'tvGenresrom', 'genres.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32016, 'tvNetworksrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32014, 'tvLanguagesrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32015, 'tvCertificatesrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32017, 'dktvshows&url=trendingrom', 'tvshows.png', 'DefaultRecentlyAddedEpisodes.png')
+        self.addDirectoryItem(32018, 'dktvshows&url=popularrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32023, 'dktvshows&url=ratingrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32019, 'dktvshows&url=viewsrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32024, 'dktvshows&url=airingrom', 'tvshows.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32026, 'dktvshows&url=premiererom', 'tvshows.png', 'DefaultTVShows.png')
+
+        self.addDirectoryItem(32028, 'tvPerson', 'people-search.png', 'DefaultTVShows.png')
+        self.addDirectoryItem(32010, 'tvSearch', 'search.png', 'DefaultTVShows.png')
+
+        self.endDirectory()
+
+
+
+
+
+
+
     def mytvshows(self, lite=False):
         try:
             self.accountCheck()

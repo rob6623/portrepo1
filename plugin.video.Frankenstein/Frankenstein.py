@@ -552,3 +552,128 @@ elif action == 'updateLibrary':
 elif action == 'service':
     from resources.lib.modules import libtools
     libtools.libepisodes().service()
+
+#######################Dark Love#########################################3
+
+
+
+elif action == 'movieGenresdrama':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().genresdrama()
+	
+elif action == 'movieGenresrom':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().genresrom()
+
+elif action == 'moviedramaNavigator':
+    from resources.lib.indexers import navigator
+    navigator.navigator().moviesdrama()
+
+elif action == 'movieromNavigator':
+    from resources.lib.indexers import navigator
+    navigator.navigator().moviesrom()	
+	
+elif action == 'movieLanguagesdrama':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().languagesdrama()
+
+elif action == 'movieLanguagesrom':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().languagesrom()
+
+elif action == 'movieCertificatesdrama':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().certificationsdrama()
+
+elif action == 'movieCertificatesrom':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().certificationsrom()
+
+elif action == 'movieYearsdrama':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().yearsdrama()
+
+elif action == 'movieYearsrom':
+    from resources.lib.indexers import dkmov
+    dkmov.movies().yearsrom()
+
+elif action == 'tvNavigatordrama':
+    from resources.lib.indexers import navigator
+    navigator.navigator().tvshowsdrama()
+
+elif action == 'tvNavigatorrom':
+    from resources.lib.indexers import navigator
+    navigator.navigator().tvshowsrom()
+
+elif action == 'tvYearsdrama':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().yearsdrama()
+
+elif action == 'tvYearsrom':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().yearsrom()
+
+elif action == 'tvGenresdrama':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().genresdrama()
+
+elif action == 'tvGenresrom':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().genresrom()
+
+elif action == 'tvLanguagesdrama':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().languagesdrama()
+
+elif action == 'tvLanguagesrom':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().languagesrom()
+
+elif action == 'tvCertificatesdrama':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().certificationsdrama()
+
+elif action == 'tvCertificatesrom':
+    from resources.lib.indexers import dktvshows
+    dktvshows.tvshows().certificationsrom()
+
+################################classics######################################################
+
+
+elif action == 'movieGenres50':
+    from resources.lib.indexers import mcmovies
+    mcmovies.movies().genres50()
+	
+elif action == 'movieGenres60':
+    from resources.lib.indexers import mcmovies
+    mcmovies.movies().genres60()
+	
+elif action == 'movieGenres70':
+    from resources.lib.indexers import mcmovies
+    mcmovies.movies().genres70()
+	
+elif action == 'movieGenres80':
+    from resources.lib.indexers import mcmovies
+    mcmovies.movies().genres80()
+
+elif action == 'tvGenres50':
+    from resources.lib.indexers import mctvshows
+    mctvshows.tvshows().genres50()
+
+	
+elif action == 'tvGenres50':
+    from resources.lib.indexers import mctvshows
+    mctvshows.tvshows().genres50()
+
+elif action == 'tvGenres60':
+    from resources.lib.indexers import mctvshows
+    mctvshows.tvshows().genres60()
+
+
+elif action == 'tvGenres70':
+    from resources.lib.indexers import mctvshows
+    mctvshows.tvshows().genres70()
+
+elif action == 'tvGenres80':
+    from resources.lib.indexers import mctvshows
+    mctvshows.tvshows().genres80()

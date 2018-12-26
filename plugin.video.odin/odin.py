@@ -1048,45 +1048,70 @@ elif action == 'animetvNavigator':
 elif action == 'toonstvNavigator':
     from resources.lib.indexers import odintvtoons
     odintvtoons.tvshows().genres()
-################################3classics###############################
-elif action == 'classic':
+##################################action packed###################################3
+
+elif action == 'apacked':
     from resources.lib.indexers import navigator
-    navigator.navigator().classic()
+    navigator.navigator().apacked()
+
+elif action == 'apmovies':
+    from resources.lib.indexers import apmovies
+    apmovies.movies().get(url)
+
+elif action == 'apmovieGenres':
+    from resources.lib.indexers import apmovies
+    apmovies.movies().genres()
 	
-elif action == 'movieGenres50':
-    from resources.lib.indexers import classmov
-    classmov.movies().genres50()
 	
-elif action == 'movieGenres60':
-    from resources.lib.indexers import classmov
-    classmov.movies().genres60()
+elif action == 'aptvshows':
+    from resources.lib.indexers import aptvshows
+    aptvshows.tvshows().get(url)
+
+elif action == 'aptvGenres':
+    from resources.lib.indexers import aptvshows
+    aptvshows.tvshows().genres()
+##############################laughing hour###################################
+
+elif action == 'lhour':
+    from resources.lib.indexers import navigator
+    navigator.navigator().lhour()
+
+elif action == 'lhmovies':
+    from resources.lib.indexers import lhmovies
+    lhmovies.movies().get(url)
+
+elif action == 'lhmovieGenres':
+    from resources.lib.indexers import lhmovies
+    lhmovies.movies().genres()
 	
-elif action == 'movieGenres70':
-    from resources.lib.indexers import classmov
-    classmov.movies().genres70()
-	
-elif action == 'movieGenres80':
-    from resources.lib.indexers import classmov
-    classmov.movies().genres80()
+elif action == 'lhtvshows':
+    from resources.lib.indexers import lhtvshows
+    lhtvshows.tvshows().get(url)
 
-elif action == 'tvGenres50':
-    from resources.lib.indexers import classtv
-    classtv.tvshows().genres50()
+elif action == 'lhtvGenres':
+    from resources.lib.indexers import lhtvshows
+    lhtvshows.tvshows().genres()
+############################3wild west####################
 
-	
-elif action == 'tvGenres50':
-    from resources.lib.indexers import classtv
-    classtv.tvshows().genres50()
+elif action == 'wild':
+    from resources.lib.indexers import navigator
+    navigator.navigator().wild()
 
-elif action == 'tvGenres60':
-    from resources.lib.indexers import classtv
-    classtv.tvshows().genres60()
+elif action == 'wwmovies':
+    from resources.lib.indexers import wwmovies
+    wwmovies.movies().get(url)
+
+elif action == 'wwmovieGenres':
+    from resources.lib.indexers import wwmovies
+    wwmovies.movies().genres()
 
 
-elif action == 'tvGenres70':
-    from resources.lib.indexers import classtv
-    classtv.tvshows().genres70()
+elif action == 'wwtvshows':
+    from resources.lib.indexers import wwtvshows
+    wwtvshows.tvshows().get(url)
 
-elif action == 'tvGenres80':
-    from resources.lib.indexers import classtv
-    classtv.tvshows().genres80()
+
+elif action == 'wwtvGenres':
+    from resources.lib.indexers import wwtvshows
+    wwtvshows.tvshows().genres()
+

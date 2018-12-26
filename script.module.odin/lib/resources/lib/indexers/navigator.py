@@ -28,7 +28,9 @@ class navigator:
         self.addDirectoryItem('Tunes', 'radios', 'tunes.png', 'DefaultTVShows.png')
         self.addDirectoryItem('live tv and sports', 'tvnav', 'iptv.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Toons and anime', 'cartoon', 'toons.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('classics', 'classic', 'toons.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('action packed ', 'apacked', 'toons.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('laughing hour ', 'lhour', 'toons.png', 'DefaultTVShows.png')
+        self.addDirectoryItem('Wild West ', 'wild', 'toons.png', 'DefaultTVShows.png')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
@@ -126,16 +128,23 @@ class navigator:
         self.addDirectoryItem('Toons Movies', 'toonmovieNavigator', 'toons.png', 'DefaultMovies.png')
         self.addDirectoryItem('Toons Tv Shows', 'toonstvNavigator', 'toons.png', 'DefaultTVShows.png')
         self.endDirectory()
+		
+    def apacked(self, lite=False):
+        self.addDirectoryItem('Action packed movies', 'apmovieGenres', 'ap.png', 'DefaultMovies.png')
+        self.addDirectoryItem('Action packed tv shows', 'aptvGenres', 'ap.png', 'DefaultMovies.png')
 
-    def classic(self, lite=False):
-        self.addDirectoryItem('50s to 60s Movies', 'movieGenres50', 'movies.jpg', 'Defaultmovies.jpg')
-        self.addDirectoryItem('60s to 70s Movies', 'movieGenres60', 'movies.jpg', 'Defaultmovies.jpg')
-        self.addDirectoryItem('70s to 80s Movies', 'movieGenres70', 'movies.jpg', 'Defaultmovies.jpg')		
-        self.addDirectoryItem('80s to 90s Movies', 'movieGenres80', 'movies.jpg', 'Defaultmovies.jpg')		
-        self.addDirectoryItem('50s to 60s TV Shows', 'tvGenres50', 'tvshows.jpg', 'Defaultmovies.jpg')		
-        self.addDirectoryItem('60s to 70s TV Shows', 'tvGenres60', 'tvshows.jpg', 'Defaultmovies.jpg')		
-        self.addDirectoryItem('70s to 80s TV Shows', 'tvGenres70', 'tvshows.jpg', 'Defaultmovies.jpg')		
-        self.addDirectoryItem('80s to 90s TV Shows', 'tvGenres80', 'tvshows.jpg', 'Defaultmovies.jpg')
+        self.endDirectory()
+		
+    def lhour(self, lite=False):
+        self.addDirectoryItem('laughing hour movies', 'lhmovieGenres', 'lh.png', 'DefaultMovies.png')
+        self.addDirectoryItem('laughing hour tv shows', 'lhtvGenres', 'lh.png', 'DefaultMovies.png')
+
+        self.endDirectory()
+
+    def wild(self, lite=False):
+        self.addDirectoryItem('wild west movies', 'wwmovieGenres', 'ww.png', 'DefaultMovies.png')
+        self.addDirectoryItem('wild west tv shows', 'wwtvGenres', 'ww.png', 'DefaultMovies.png')
+
         self.endDirectory()
 	
     def tvshows(self, lite=False):

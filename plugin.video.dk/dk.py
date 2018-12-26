@@ -109,6 +109,10 @@ elif action == 'browser':
     lists2.resolver().browser(url)
 
 ######################LISTS SCRAPER#################################
+if action == "fsNavigator":
+    from resources.lib.indexers import navigator
+    navigator.navigator().fs()
+
 
 if action == 'lists':
     from resources.lib.indexers import lists
@@ -587,3 +591,79 @@ elif action == 'updateLibrary':
 elif action == 'service':
     from resources.lib.modules import libtools
     libtools.libepisodes().service()
+######################################3astro###########################################
+elif action == 'astro':
+    from resources.lib.indexers import navigator
+    navigator.navigator().astro()
+
+elif action == 'FranchiseNavigator':
+    from resources.lib.indexers import navigator
+    navigator.navigator().Franchise()
+
+elif action == 'tvFranchiseNavigator':
+    from resources.lib.indexers import navigator
+    navigator.navigator().Franchisetv()
+
+elif action == 'namegenre':
+    from resources.lib.indexers import asmovies
+    asmovies.movies().namegenre()
+
+elif action == 'asmovies':
+    from resources.lib.indexers import asmovies
+    asmovies.movies().get(url)
+
+elif action == 'asmovieGenres':
+    from resources.lib.indexers import asmovies
+    asmovies.movies().genres()
+
+elif action == 'astvshows':
+    from resources.lib.indexers import astvshows
+    astvshows.tvshows().get(url)
+
+elif action == 'astvGenres':
+    from resources.lib.indexers import astvshows
+    astvshows.tvshows().genres()
+###################################nightmare################################
+
+elif action == 'night':
+    from resources.lib.indexers import navigator
+    navigator.navigator().night()
+	
+elif action == 'screamq':
+    from resources.lib.indexers import nmaremov
+    nmaremov.movies().screamq()
+
+elif action == 'nightnamegenre':
+    from resources.lib.indexers import nmaremov
+    nmaremov.movies().namegenre()
+	
+
+elif action == 'nmaremovies':
+    from resources.lib.indexers import nmaremov
+    nmaremov.movies().get(url)
+
+elif action == 'nightmovieGenres':
+    from resources.lib.indexers import nmaremov
+    nmaremov.movies().genres()
+
+
+elif action == 'nmaretvshows':
+    from resources.lib.indexers import nmaretv
+    nmaretv.tvshows().get(url)
+
+
+elif action == 'nighttvGenres':
+    from resources.lib.indexers import nmaretv
+    nmaretv.tvshows().genres()
+
+
+
+
+
+
+
+
+
+
+
+
