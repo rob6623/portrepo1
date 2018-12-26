@@ -596,9 +596,6 @@ elif action == 'astro':
     from resources.lib.indexers import navigator
     navigator.navigator().astro()
 
-elif action == 'FranchiseNavigator':
-    from resources.lib.indexers import navigator
-    navigator.navigator().Franchise()
 
 elif action == 'tvFranchiseNavigator':
     from resources.lib.indexers import navigator

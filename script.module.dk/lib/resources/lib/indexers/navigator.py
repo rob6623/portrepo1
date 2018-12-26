@@ -26,7 +26,6 @@ class navigator:
         self.addDirectoryItem(32002, 'tvNavigator', 'tvshows.png', 'DefaultTVShows.png')
         self.addDirectoryItem('Freak Shows', 'fsNavigator', 'fs.png', 'DefaultTVShows.png')
         self.addDirectoryItem('House of Horrors', 'hohNavigator', 'hoh.png', 'DefaultTVShows.png')
-        self.addDirectoryItem('Franchises', 'FranchiseNavigator', 'astro.png', 'DefaultMovies.jpg')
         if not control.setting('lists.widget') == '0':
             self.addDirectoryItem(32003, 'mymovieNavigator', 'mymovies.png', 'DefaultVideoPlaylists.png')
             self.addDirectoryItem(32004, 'mytvNavigator', 'mytvshows.png', 'DefaultVideoPlaylists.png')
