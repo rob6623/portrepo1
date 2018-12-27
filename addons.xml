@@ -490,7 +490,7 @@ provider-name="ToxicBonehead">
 </extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.3.9" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.4.0" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/addons.xml</info>
@@ -906,6 +906,28 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
 		<description>Metadata for odin are maintained separately to make distribution of the the addon itself easier/faster.</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.odinxxx"
+	     name="Odin XXX "
+	     version="0.0.1"
+	     provider-name="bcrusher">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.resolveurl"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="odinxxx.py">
+        <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">-</summary>
+    <description lang="en">XXX depend for Odin Addon</description>
+    <disclaimer lang="en">.</disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
 </addon>
 
 <addon id="script.SKI" name="[COLOR yellow]Skeleton Key info Mod[/COLOR]" version="7.7.7" provider-name="KryptKeeper">
