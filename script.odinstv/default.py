@@ -45,7 +45,7 @@ import sys
 
 import koding
 import koding.router as router
-import weblogin,time,traceback
+import time,traceback
 from resources.lib.installa import Dialog_specific
 from resources.lib.news_window import Dialog_Example
 import resources.lib.search
