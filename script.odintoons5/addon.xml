@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.odintoons5" name="Odin Toons 5" version="0.0.1" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Default.py">
+		<provides>all</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Odin Toons 5</summary>
+		<description lang="en">Odin Toons 5</description>
+		<news></news>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers or the websites that it scrapes information from.</disclaimer>
+	</extension>
+</addon>

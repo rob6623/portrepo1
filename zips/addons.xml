@@ -470,6 +470,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.toonmania2" name="Toonmania2" version="0.5.3" provider-name="doko, MetalKettle">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Toonmania2</summary>
+		<description lang="en">Watch cartoons and anime from [COLOR khaki][B]Animetoon[/B][/COLOR] (www.animetoon.org) and [COLOR khaki][B]Animeplus[/B][/COLOR] (www.animeplus.tv).[CR]Go pay them a visit![CR]Add-on by doko.
+		</description>
+		<news>[COLOR khaki][B]Toonmania2[/B][/COLOR] - Cartoons &amp; Anime[CR][B]0.5.3:[/B][CR]- Fixed a script bug.[CR][B]0.5.2:[/B][CR]- Added parsed query route.[CR][B]0.5.1:[/B][CR]- New setting: Show Search Results Group.[CR]Lets you choose if you want to see a parent group item after a name search.[CR][B]0.5.0:[/B][CR]- New search mode: your Trakt lists.[CR]- Kodi 18 support.</news>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers or the websites that it scrapes information from.</disclaimer>
+	</extension>
+</addon>
+
 <addon id="plugin.video.Toxiccreator"
 version="0.0.1"
 name="Toxic creator"
@@ -490,7 +510,7 @@ provider-name="ToxicBonehead">
 </extension>
 </addon>
 
-<addon id="repository.Portals" name="Portals" version="1.0.4.9" provider-name="Bcrusher">
+<addon id="repository.Portals" name="Portals" version="1.0.5.0" provider-name="Bcrusher">
 	<extension point="xbmc.addon.repository" name="Portals REPO">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/bcrusher29/portrepo1/master/zips/addons.xml</info>
@@ -983,6 +1003,64 @@ Documentation: https://github.com/tamland/kodi-plugin-routing</description>
         <video_guide></video_guide>
         <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
+</addon>
+
+<addon id="script.odintoons3" name="Odin Toons 3" version="0.1.0" provider-name="Bone Crusher">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" />
+    <import addon="script.module.beautifulsoup4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Odin Toons 3</summary>
+    <description lang="en"></description>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+    <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.odintoons4" name="Odin toons 4" version="0.3.9" provider-name="doko, Tikipeter">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="Main.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">Odin toons 4</description>
+    <news></news>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.odintoons5" name="Odin Toons 5" version="0.0.1" provider-name="BoneCrusher">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.requests" />
+		<import addon="script.module.beautifulsoup4"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="Default.py">
+		<provides>all</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Odin Toons 5</summary>
+		<description lang="en">Odin Toons 5</description>
+		<news></news>
+		<disclaimer lang="en"></disclaimer>
+		<platform>all</platform>
+		<disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers or the websites that it scrapes information from.</disclaimer>
+	</extension>
 </addon>
 
 <addon id="script.odintv" name="Odin TV" version="1.2" provider-name="B.C">
